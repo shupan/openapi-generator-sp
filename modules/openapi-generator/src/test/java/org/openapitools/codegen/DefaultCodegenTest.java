@@ -67,6 +67,8 @@ public class DefaultCodegenTest {
     public void testDeeplyNestedAdditionalPropertiesImports() {
         final DefaultCodegen codegen = new DefaultCodegen();
         final OpenAPI openApi = TestUtils.parseFlattenSpec("src/test/resources/3_0/additional-properties-deeply-nested.yaml");
+
+        // @sp 这个设置openapi的对象，解析yaml的构建能力
         codegen.setOpenAPI(openApi);
         PathItem path = openApi.getPaths().get("/ping");
         CodegenOperation operation = codegen.fromOperation("/ping", "post", path.getPost(), path.getServers());

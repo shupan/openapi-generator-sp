@@ -919,6 +919,22 @@ public class DefaultGenerator implements Generator {
         }
     }
 
+    /**
+     * 生成的核心代码设计
+     * 给定的代码是一个方法，根据 OpenAPI 规范生成文件。以下是代码的逐步解释：
+     *  1. 代码首先检查  `openAPI`  对象是否为空。如果为空，它会抛出一个带有错误消息的  `RuntimeException` ，指示 OpenAPI 输入存在问题。
+     * 2. 接下来，它检查  `config`  对象是否为空。如果为空，它会抛出一个带有错误消息的  `RuntimeException` ，指示缺少配置。
+     * 3. 如果  `config`  对象不为空，它从配置中获取生成器元数据，并根据元数据执行一些日志记录。
+     * 4. 然后，它调用几个方法来配置生成器属性、配置 OpenAPI 信息、处理 OpenAPI 和处理用户定义的模板。
+     * 5. 在此之后，它初始化一些变量，并调用  `generateModels`  方法根据 OpenAPI 生成模型文件。
+     * 6. 然后，它调用  `generateApis`  方法根据 OpenAPI 和生成的模型生成 API 文件。
+     * 7. 它使用生成的操作和模型构建支持文件包，然后调用  `generateSupportingFiles`  方法生成支持文件。
+     * 8. 如果  `dryRun`  标志为 true，则执行干运行，并记录结果和状态。否则，如果  `generateSupportingFiles`  标志为 true，则生成文件元数据。
+     * 9. 然后，它调用配置的  `postProcess`  方法，并重置全局设置。
+     * 10. 最后，它返回生成的文件。
+     * 总体而言，该代码执行与根据 OpenAPI 规范生成文件相关的各种任务，包括配置属性、处理 OpenAPI、生成模型和 API、生成支持文件、执行干运行和后处理。
+     * @return
+     */
     @Override
     public List<File> generate() {
         if (openAPI == null) {

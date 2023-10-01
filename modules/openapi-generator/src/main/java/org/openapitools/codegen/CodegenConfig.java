@@ -173,6 +173,10 @@ public interface CodegenConfig {
 
     void preprocessOpenAPI(OpenAPI openAPI);
 
+    /**
+     * 这个方法没有使用
+     * @param openAPI
+     */
     void processOpenAPI(OpenAPI openAPI);
 
     Compiler processCompiler(Compiler compiler);

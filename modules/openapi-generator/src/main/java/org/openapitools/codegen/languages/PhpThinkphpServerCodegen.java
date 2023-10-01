@@ -17,6 +17,7 @@
 
 package org.openapitools.codegen.languages;
 
+import io.swagger.v3.oas.models.media.Schema;
 import org.openapitools.codegen.CodegenOperation;
 import org.openapitools.codegen.CodegenProperty;
 import org.openapitools.codegen.CodegenType;
@@ -27,21 +28,22 @@ import org.openapitools.codegen.model.OperationMap;
 import org.openapitools.codegen.model.OperationsMap;
 import org.openapitools.codegen.utils.ModelUtils;
 
-import io.swagger.v3.oas.models.media.Schema;
-
 import java.io.File;
 import java.util.*;
 
 import static org.openapitools.codegen.utils.StringUtils.camelize;
 
-public class PhpLaravelServerCodegen extends AbstractPhpCodegen {
+/**
+ * 正对于thinkphp框架的代码生成器
+ */
+public class PhpThinkphpServerCodegen extends AbstractPhpCodegen {
     protected String apiVersion = "1.0.0";
 
     /**
      * Configures the type of generator.
      *
      * @return the CodegenType for this generator
-     * @see org.openapitools.codegen.CodegenType
+     * @see CodegenType
      */
     public CodegenType getTag() {
         return CodegenType.SERVER;
@@ -54,7 +56,7 @@ public class PhpLaravelServerCodegen extends AbstractPhpCodegen {
      * @return the friendly name for the generator
      */
     public String getName() {
-        return "php-laravel";
+        return "php-thinkphp";
     }
 
     /**
@@ -70,7 +72,7 @@ public class PhpLaravelServerCodegen extends AbstractPhpCodegen {
     /**
      * Class constructor
      */
-    public PhpLaravelServerCodegen() {
+    public PhpThinkphpServerCodegen() {
         super();
 
         modifyFeatureSet(features -> features
