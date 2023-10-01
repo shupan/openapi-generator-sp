@@ -15,6 +15,9 @@ public abstract class OpenApiGeneratorCommand implements Runnable {
 
     protected BuildInfo buildInfo = new BuildInfo();
 
+    /**
+     * 命令行执行器设计
+     */
     @Override
     public void run() {
         if (globalOptions.version) {

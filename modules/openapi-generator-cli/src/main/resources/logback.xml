@@ -54,6 +54,13 @@
         </filter>
     </appender>
 
+    <!-- 增加了文件的目录追加的操作 -->
+    <appender name="file" class="ch.qos.logback.core.FileAppender">
+        <file>${project.basedir}/logs/openapi-generator.log</file>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
     <logger name="io.swagger" level="warn">
         <!-- Colorize by passing -Dcolor -->
         <if condition='isDefined("color")'>
@@ -79,6 +86,8 @@
                 <appender-ref ref="STDERR"/>
             </else>
         </if>
+        <!--  当前要查看生成请求的模板的时候，可以打开用于排查 -->
+<!--        <appender-ref ref="file"/>-->
     </logger>
     <root level="error">
         <!-- Colorize by passing -Dcolor -->

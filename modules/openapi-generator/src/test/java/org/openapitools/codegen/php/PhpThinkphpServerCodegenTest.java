@@ -31,7 +31,6 @@ public class PhpThinkphpServerCodegenTest {
     public void testInitialConfigValues() throws Exception {
         final PhpThinkphpServerCodegen codegen = new PhpThinkphpServerCodegen();
         codegen.processOpts();
-
         Assert.assertEquals(codegen.additionalProperties().get(CodegenConstants.HIDE_GENERATION_TIMESTAMP), Boolean.TRUE);
         Assert.assertEquals(codegen.isHideGenerationTimestamp(), true);
     }

@@ -79,6 +79,9 @@ public class PhpClientCodegenTest {
         Assert.assertEquals(codegen.additionalProperties().get(CodegenConstants.INVOKER_PACKAGE), "Xinvoker");
     }
 
+    /**
+     * 固件代码的逻辑的对象
+     */
     @Test(description = "convert a model with dollar signs")
     public void modelTest() {
         final OpenAPI openAPI = TestUtils.parseFlattenSpec("src/test/resources/3_0/dollar-in-names-pull14359.yaml");

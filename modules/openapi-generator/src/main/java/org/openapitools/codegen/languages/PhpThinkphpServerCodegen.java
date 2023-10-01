@@ -90,13 +90,13 @@ public class PhpThinkphpServerCodegen extends AbstractPhpCodegen {
                 )
         );
 
-        embeddedTemplateDir = templateDir = "php-laravel";
+        embeddedTemplateDir = templateDir = "php-thinkphp";
         variableNamingConvention = "camelCase";
 
         /*
          * packPath
          */
-        invokerPackage = "php-laravel";
+        invokerPackage = "php-thinkphp";
         outputFolder = srcBasePath;
 
         /*

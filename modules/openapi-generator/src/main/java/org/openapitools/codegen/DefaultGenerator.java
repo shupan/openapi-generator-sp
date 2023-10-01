@@ -17,6 +17,7 @@
 
 package org.openapitools.codegen;
 
+import com.alibaba.fastjson2.JSONObject;
 import io.swagger.v3.core.util.Json;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.Operation;
@@ -72,6 +73,7 @@ import java.util.concurrent.ConcurrentSkipListSet;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+
 import static org.apache.commons.lang3.StringUtils.removeStart;
 import static org.openapitools.codegen.utils.OnceLogger.once;
 
@@ -110,6 +112,27 @@ public class DefaultGenerator implements Generator {
         LOGGER.info("Generating with dryRun={}", this.dryRun);
     }
 
+    /**
+     * @sp 生成代码的需要的扩展参数，包括用户自定义的模板
+     * 这段代码是一个方法，它接受一个ClientOptInput对象作为参数，并返回一个Generator对象。
+     * 代码的解释如下：
+     * 1. 将传入的opts赋值给成员变量this.opts，并从opts中获取openAPI和config的值，分别赋值给成员变量this.openAPI和this.config。
+     * 2. 从opts中获取用户定义的模板列表userFiles，并将其设置为不可修改的列表this.userDefinedTemplates（如果userFiles不为null）。
+     * 3. 根据config中的配置项创建TemplateManagerOptions对象templateManagerOptions，包括是否启用最小更新和是否跳过覆盖。
+     * 4. 如果设置了dryRun为true，则创建一个DryRunTemplateManager对象this.templateProcessor，传递templateManagerOptions作为参数。
+     * 5. 否则，根据config中的配置项获取TemplatingEngineAdapter对象templatingEngine。
+     * 6. 如果templatingEngine是MustacheEngineAdapter类型的，则将其转换为MustacheEngineAdapter对象，并对编译器进行处理。
+     * 7. 创建CommonTemplateContentLocator对象commonTemplateLocator和GeneratorTemplateContentLocator对象generatorTemplateLocator。
+     * 8. 创建TemplateManager对象this.templateProcessor，传递templateManagerOptions、templatingEngine和一个包含commonTemplateLocator和generatorTemplateLocator的TemplatePathLocator数组作为参数。
+     * 9. 获取config中的ignoreFileLocation。
+     * 10. 如果ignoreFileLocation不为null，则创建一个File对象ignoreFile，检查该文件是否存在且可读。
+     * 11. 如果ignoreFile有效，则创建一个CodegenIgnoreProcessor对象this.ignoreProcessor，传递ignoreFile作为参数。
+     * 12. 否则，记录一个警告信息，指示指定的ignore文件无效，并将会回退到输出目录中的现有ignore文件。
+     * 13. 如果this.ignoreProcessor为null，则创建一个CodegenIgnoreProcessor对象，传递this.config.getOutputDir()作为参数。
+     * 14. 返回this作为方法的输出，即Generator对象。
+     * @param opts
+     * @return
+     */
     @SuppressWarnings("deprecation")
     @Override
     public Generator opts(ClientOptInput opts) {
@@ -430,6 +453,38 @@ public class DefaultGenerator implements Generator {
         }
     }
 
+    /**
+     * 生成模型的结构设计流程
+     * 这段代码是一个名为"generateModels"的方法，它接受三个参数：一个文件列表、一个ModelMap对象列表和一个表示未使用的模型的字符串列表。该方法的目的是基于提供的文件和规范生成模型。
+     * 以下是代码的逐步解释：
+     * 1. 首先，它检查"generateModels"标志是否设置为true。如果不是，它会记录一条消息并返回，跳过模型的生成。
+     * 2. 然后，它从openAPI规范文档中获取模式。如果没有模式，它会记录一条警告并返回。
+     * 3. 它从GlobalSettings中获取"models"属性，并将其拆分为要生成的模型名称的集合。
+     * 4. 它获取模式的键（模型名称）。
+     * 5. 如果有要生成的模型，它将过滤模型键，只包括modelsToGenerate集合中的模型。
+     * 6. 它初始化一个名为"allProcessedModels"的映射，用于存储处理过的模型。
+     * 7. 它从GlobalSettings中获取"skipFormModel"属性，并检查它是否设置为false。
+     * 8. 它遍历每个模型键，并执行以下步骤：
+     *    a. 如果模型在模式映射中存在，它会记录一条调试消息并跳过模型处理。
+     *    b. 如果模型被标记为未使用，它检查"skipFormModel"属性。如果设置为false，则记录一条消息表示由于属性设置为false，生成了该模型。否则，记录一条消息表示不生成该模型，并继续下一次迭代。
+     *    c. 它检查模型是否为自由形式对象。如果是，则记录一条消息并继续下一次迭代。
+     *    d. 它检查模型是否为没有属性的映射模式，并且"generateAliasAsModel"属性设置为false。如果是，则记录一条消息并继续下一次迭代。
+     *    e. 它检查模型是否为没有属性的数组模式，并且"generateAliasAsModel"属性设置为false。如果是，则记录一条消息并继续下一次迭代。
+     *    f. 它创建一个包含当前模型和模式的模式映射。
+     *    g. 使用配置和模式映射处理模型，并将处理过的模型添加到"allProcessedModels"映射中。
+     * 9. 使用配置更新"allProcessedModels"映射。
+     * 10. 使用配置对"allProcessedModels"映射进行任何后处理。
+     * 11. 遍历"allProcessedModels"映射中的每个modelName，并执行以下步骤：
+     *     a. 获取当前modelName的模型。
+     *     b. 如果modelName在模式映射中存在，继续下一次迭代。
+     *     c. 从模型列表中获取模型模板，并检查它是否为别名。如果是，则继续下一次迭代。
+     *     d. 将模型模板添加到"allModels"列表中。
+     *     e. 使用generateModel、generateModelTests和generateModelDocumentation方法生成模型文件、测试和文档。
+     * 12. 如果在GlobalSettings中设置了"debugModels"属性，则以漂亮的JSON格式记录"allModels"。
+     * @param files
+     * @param allModels
+     * @param unusedModels
+     */
     void generateModels(List<File> files, List<ModelMap> allModels, List<String> unusedModels) {
         if (!generateModels) {
             // TODO: Process these anyway and add to dryRun info
@@ -545,6 +600,11 @@ public class DefaultGenerator implements Generator {
 
         // post process all processed models
         allProcessedModels = config.postProcessAllModels(allProcessedModels);
+
+        // 打印allProcessedModels结果对象
+        JSONObject jsonObject = new JSONObject(allProcessedModels);
+        String logStr = jsonObject.toJSONString(jsonObject);
+        LOGGER.info("generateModels output：" + logStr);
 
         // generate files based on processed models
         for (String modelName : allProcessedModels.keySet()) {
@@ -920,6 +980,7 @@ public class DefaultGenerator implements Generator {
     }
 
     /**
+     * 通过命令行的工具来生成代码
      * 生成的核心代码设计
      * 给定的代码是一个方法，根据 OpenAPI 规范生成文件。以下是代码的逐步解释：
      *  1. 代码首先检查  `openAPI`  对象是否为空。如果为空，它会抛出一个带有错误消息的  `RuntimeException` ，指示 OpenAPI 输入存在问题。
@@ -1106,6 +1167,10 @@ public class DefaultGenerator implements Generator {
     }
 
     protected File processTemplateToFile(Map<String, Object> templateData, String templateName, String outputFilename, boolean shouldGenerate, String skippedByOption) throws IOException {
+
+        // @sp 在渲染模板文件的地方增加日志，用于不同的模板渲染生成的文件下
+        LOGGER.info("processTemplateToFile: templateName={}, templateData={}", templateName, JSONObject.toJSONString(templateData));
+
         return processTemplateToFile(templateData, templateName, outputFilename, shouldGenerate, skippedByOption, this.config.getOutputDir());
     }
 
@@ -1342,6 +1407,37 @@ public class DefaultGenerator implements Generator {
         return result;
     }
 
+    /**
+     * 处理模型的对象结构
+     * 这段代码是一个方法，它接受一个CodegenConfig对象和一个包含Schema定义的Map作为参数，并返回一个ModelsMap对象。
+     * 代码的解释如下：
+     * 1. 方法内部创建了一个ModelsMap对象objs，并设置了其"package"属性为config.modelPackage()的返回值。
+     * 2. 创建了一个空的modelMaps列表和一个空的allImports集合。
+     * 3. 使用for循环遍历definitions中的每个Schema定义，获取其键和值。
+     * 4. 如果schema为空，则记录一个警告信息并继续下一次循环。
+     * 5. 使用config.fromModel方法将键和值转换为CodegenModel对象cm。
+     * 6. 创建一个ModelMap对象mo，并将cm设置为其属性"model"的值。
+     * 7. 将config.toModelImport(cm.classname)的返回值设置为mo的属性"importPath"的值。
+     * 8. 将mo添加到modelMaps列表中。
+     * 9. 调用cm的removeSelfReferenceImport方法，删除自引用的导入。
+     * 10. 将cm的imports属性中的所有值添加到allImports集合中。
+     * 11. 将modelMaps设置为objs的属性"models"的值。
+     * 12. 创建一个空的importSet集合。
+     * 13. 使用for循环遍历allImports集合中的每个值nextImport。
+     * 14. 获取nextImport在config.importMapping()中的映射，如果映射为空，则使用config.toModelImport(nextImport)的返回值。
+     * 15. 如果映射不为空且不在config.defaultIncludes()中，则将映射添加到importSet集合中。
+     * 16. 获取nextImport在config.instantiationTypes()中的映射，如果映射不为空且不在config.defaultIncludes()中，则将映射添加到importSet集合中。
+     * 17. 创建一个空的imports列表。
+     * 18. 使用for循环遍历importSet集合中的每个值s。
+     * 19. 创建一个HashMap对象item，将s设置为其属性"import"的值。
+     * 20. 将item添加到imports列表中。
+     * 21. 将imports设置为objs的属性"imports"的值。
+     * 22. 调用config的postProcessModels方法，对objs进行后处理。
+     * 23. 返回objs作为方法的输出。
+     * @param config
+     * @param definitions
+     * @return
+     */
     private ModelsMap processModels(CodegenConfig config, Map<String, Schema> definitions) {
         ModelsMap objs = new ModelsMap();
         objs.put("package", config.modelPackage());
