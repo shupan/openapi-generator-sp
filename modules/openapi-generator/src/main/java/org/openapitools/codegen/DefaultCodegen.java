@@ -184,10 +184,20 @@ public class DefaultCodegen implements CodegenConfig {
     apiTemplateFiles are for API outputs only (controllers/handlers).
     API templates may be written multiple times; APIs are grouped by tag and the file is written once per tag group.
     */
+
+    // @sp api的模板文件
     protected Map<String, String> apiTemplateFiles = new HashMap<>();
+
+    // @sp model文件
     protected Map<String, String> modelTemplateFiles = new HashMap<>();
+
+    // @sp api测试文件
     protected Map<String, String> apiTestTemplateFiles = new HashMap<>();
+
+    // @sp model测试的模板文件
     protected Map<String, String> modelTestTemplateFiles = new HashMap<>();
+
+    // @sp  apidoc文件， 核心来说主要支持 model , api的文件
     protected Map<String, String> apiDocTemplateFiles = new HashMap<>();
     protected Map<String, String> modelDocTemplateFiles = new HashMap<>();
     protected Map<String, String> reservedWordsMappings = new HashMap<>();

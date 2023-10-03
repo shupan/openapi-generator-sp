@@ -72,6 +72,7 @@ public abstract class AbstractPhpCodegen extends DefaultCodegen implements Codeg
     public AbstractPhpCodegen() {
         super();
 
+        // @sp 模板文件，包括api的model文件
         modelTemplateFiles.put("model.mustache", ".php");
         apiTemplateFiles.put("api.mustache", ".php");
         apiTestTemplateFiles.put("api_test.mustache", ".php");

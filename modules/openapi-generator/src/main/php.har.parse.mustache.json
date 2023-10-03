@@ -1,0 +1,3890 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "Charles Proxy",
+      "version": "4.6.1"
+    },
+    "entries": [
+      {
+        "startedDateTime": "2023-10-02T15:41:47.291+08:00",
+        "time": 87,
+        "request": {
+          "method": "GET",
+          "url": "https://aibox.copyppt.com/adminapi/ai_setting/getConfig?type=aidraw",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [
+            {
+              "name": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "thinkphp_show_page_trace",
+              "value": "0|0"
+            }
+          ],
+          "headers": [
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":authority",
+              "value": "aibox.copyppt.com"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": ":path",
+              "value": "/adminapi/ai_setting/getConfig?type=aidraw"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\""
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "version",
+              "value": "1.6.0"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "token",
+              "value": "545f3b49c65e1196e2fcb6ac042cadde"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"macOS\""
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "referer",
+              "value": "https://aibox.copyppt.com/admin/aidraw/aidraw.config/setting"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,zh-TW;q=0.8,en;q=0.7,und;q=0.6,ja;q=0.5,da;q=0.4"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "thinkphp_show_page_trace=0|0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "type",
+              "value": "aidraw"
+            }
+          ],
+          "headersSize": 52,
+          "bodySize": 0
+        },
+        "response": {
+          "_charlesStatus": "COMPLETE",
+          "status": 200,
+          "statusText": null,
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":status",
+              "value": "200"
+            },
+            {
+              "name": "server",
+              "value": "nginx"
+            },
+            {
+              "name": "date",
+              "value": "Mon, 02 Oct 2023 07:41:47 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "access-control-allow-headers",
+              "value": "Authorization, Sec-Fetch-Mode, DNT, X-Mx-ReqToken, Keep-Alive, User-Agent, If-Match, If-None-Match, If-Unmodified-Since, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type, Accept-Language, Origin, Accept-Encoding,Access-Token,token,version"
+            },
+            {
+              "name": "access-control-allow-methods",
+              "value": "GET, POST, PATCH, PUT, DELETE, post"
+            },
+            {
+              "name": "access-control-max-age",
+              "value": "1728000"
+            },
+            {
+              "name": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=31536000"
+            }
+          ],
+          "content": {
+            "size": 679,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "{\"code\":1,\"show\":0,\"msg\":\"\",\"data\":{\"api_key\":\"0\",\"api_secret\":\"0\",\"yijian_diy_name\":\"0\",\"yijian_mode\":\"0\",\"yijian_sort\":\"3\",\"mili_api_key\":\"0xA4a3fDac18a8d30B2545F5320a9D15Ca675b912f\",\"mili_api_secret\":\"o7m9OInIDHBpmcuc1Icl3jfHJ2esI4QGF1RSurmkUBQM1qq9\",\"mili_diy_name\":\"中米AI\",\"mili_mode\":\"1\",\"mili_sort\":\"2\",\"mili_fast\":\"0\",\"linker_api_key\":\"\",\"linker_diy_name\":\"\",\"linker_mode\":\"0\",\"linker_sort\":\"1\",\"keywords\":[],\"keyword_filtration\":[\"天安门\",\"坦克\",\"暴行\",\"暴露\",\"非法\",\"毒品\",\"色情\"],\"terminal\":[\"7\",\"1\",\"2\"],\"mp_tiktok\":{\"convert\":\"2\",\"mode\":[\"score\",\"see_ad\"]},\"mp_wechat\":{\"convert\":\"1\",\"mode\":[\"score\"]},\"oa_weixin\":{\"mode\":[\"score\"],\"convert\":\"1\"}}}",
+            "encoding": "base64"
+          },
+          "redirectURL": null,
+          "headersSize": 427,
+          "bodySize": 679
+        },
+        "serverIPAddress": "120.77.37.130",
+        "cache": {},
+        "timings": {
+          "dns": -1,
+          "connect": -1,
+          "ssl": -1,
+          "send": 0,
+          "wait": 87,
+          "receive": 0
+        }
+      },
+      {
+        "startedDateTime": "2023-10-02T15:41:50.075+08:00",
+        "time": 95,
+        "request": {
+          "method": "POST",
+          "url": "https://aibox.copyppt.com/adminapi/ai_setting/setConfig",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [
+            {
+              "name": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "thinkphp_show_page_trace",
+              "value": "0|0"
+            }
+          ],
+          "headers": [
+            {
+              "name": ":method",
+              "value": "POST"
+            },
+            {
+              "name": ":authority",
+              "value": "aibox.copyppt.com"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": ":path",
+              "value": "/adminapi/ai_setting/setConfig"
+            },
+            {
+              "name": "content-length",
+              "value": "673"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\""
+            },
+            {
+              "name": "version",
+              "value": "1.6.0"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json;charset=UTF-8"
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "token",
+              "value": "545f3b49c65e1196e2fcb6ac042cadde"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"macOS\""
+            },
+            {
+              "name": "origin",
+              "value": "https://aibox.copyppt.com"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "referer",
+              "value": "https://aibox.copyppt.com/admin/aidraw/aidraw.config/setting"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,zh-TW;q=0.8,en;q=0.7,und;q=0.6,ja;q=0.5,da;q=0.4"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "thinkphp_show_page_trace=0|0"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "application/json;charset=UTF-8",
+            "text": "{\"api_key\":\"0\",\"api_secret\":\"0\",\"yijian_diy_name\":\"0\",\"yijian_mode\":\"0\",\"yijian_sort\":\"3\",\"mili_api_key\":\"0xA4a3fDac18a8d30B2545F5320a9D15Ca675b912f\",\"mili_api_secret\":\"o7m9OInIDHBpmcuc1Icl3jfHJ2esI4QGF1RSurmkUBQM1qq9\",\"mili_diy_name\":\"中米AI\",\"mili_mode\":\"1\",\"mili_sort\":\"2\",\"mili_fast\":\"0\",\"linker_diy_name\":\"\",\"linker_api_key\":\"\",\"linker_mode\":\"0\",\"linker_sort\":\"1\",\"platform\":\"yijian\",\"keywords\":[],\"keyword_filtration\":[\"天安门\",\"坦克\",\"暴行\",\"暴露\",\"非法\",\"毒品\",\"色情\"],\"terminal\":[\"7\",\"1\",\"2\"],\"mp_tiktok\":{\"convert\":2,\"mode\":[\"score\",\"see_ad\"]},\"mp_wechat\":{\"convert\":1,\"mode\":[\"score\"]},\"oa_weixin\":{\"mode\":[\"score\"],\"convert\":1},\"type\":\"aidraw\"}"
+          },
+          "headersSize": 197,
+          "bodySize": 673
+        },
+        "response": {
+          "_charlesStatus": "COMPLETE",
+          "status": 200,
+          "statusText": null,
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":status",
+              "value": "200"
+            },
+            {
+              "name": "server",
+              "value": "nginx"
+            },
+            {
+              "name": "date",
+              "value": "Mon, 02 Oct 2023 07:41:50 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "access-control-allow-headers",
+              "value": "Authorization, Sec-Fetch-Mode, DNT, X-Mx-ReqToken, Keep-Alive, User-Agent, If-Match, If-None-Match, If-Unmodified-Since, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type, Accept-Language, Origin, Accept-Encoding,Access-Token,token,version"
+            },
+            {
+              "name": "access-control-allow-methods",
+              "value": "GET, POST, PATCH, PUT, DELETE, post"
+            },
+            {
+              "name": "access-control-max-age",
+              "value": "1728000"
+            },
+            {
+              "name": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=31536000"
+            }
+          ],
+          "content": {
+            "size": 50,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "eyJjb2RlIjoxLCJzaG93IjoxLCJtc2ciOiLorr7nva7miJDlip8iLCJkYXRhIjpbXX0=",
+            "encoding": "base64"
+          },
+          "redirectURL": null,
+          "headersSize": 427,
+          "bodySize": 50
+        },
+        "serverIPAddress": "120.77.37.130",
+        "cache": {},
+        "timings": {
+          "dns": -1,
+          "connect": -1,
+          "ssl": -1,
+          "send": 0,
+          "wait": 94,
+          "receive": 1
+        }
+      },
+      {
+        "startedDateTime": "2023-10-02T15:41:50.176+08:00",
+        "time": 82,
+        "request": {
+          "method": "GET",
+          "url": "https://aibox.copyppt.com/adminapi/ai_setting/getConfig?type=aidraw",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [
+            {
+              "name": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "thinkphp_show_page_trace",
+              "value": "0|0"
+            }
+          ],
+          "headers": [
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":authority",
+              "value": "aibox.copyppt.com"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": ":path",
+              "value": "/adminapi/ai_setting/getConfig?type=aidraw"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\""
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "version",
+              "value": "1.6.0"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "token",
+              "value": "545f3b49c65e1196e2fcb6ac042cadde"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"macOS\""
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "referer",
+              "value": "https://aibox.copyppt.com/admin/aidraw/aidraw.config/setting"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,zh-TW;q=0.8,en;q=0.7,und;q=0.6,ja;q=0.5,da;q=0.4"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "thinkphp_show_page_trace=0|0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "type",
+              "value": "aidraw"
+            }
+          ],
+          "headersSize": 21,
+          "bodySize": 0
+        },
+        "response": {
+          "_charlesStatus": "COMPLETE",
+          "status": 200,
+          "statusText": null,
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":status",
+              "value": "200"
+            },
+            {
+              "name": "server",
+              "value": "nginx"
+            },
+            {
+              "name": "date",
+              "value": "Mon, 02 Oct 2023 07:41:50 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "access-control-allow-headers",
+              "value": "Authorization, Sec-Fetch-Mode, DNT, X-Mx-ReqToken, Keep-Alive, User-Agent, If-Match, If-None-Match, If-Unmodified-Since, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type, Accept-Language, Origin, Accept-Encoding,Access-Token,token,version"
+            },
+            {
+              "name": "access-control-allow-methods",
+              "value": "GET, POST, PATCH, PUT, DELETE, post"
+            },
+            {
+              "name": "access-control-max-age",
+              "value": "1728000"
+            },
+            {
+              "name": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=31536000"
+            }
+          ],
+          "content": {
+            "size": 679,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "eyJjb2RlIjoxLCJzaG93IjowLCJtc2ciOiIiLCJkYXRhIjp7ImFwaV9rZXkiOiIwIiwiYXBpX3NlY3JldCI6IjAiLCJ5aWppYW5fZGl5X25hbWUiOiIwIiwieWlqaWFuX21vZGUiOiIwIiwieWlqaWFuX3NvcnQiOiIzIiwibWlsaV9hcGlfa2V5IjoiMHhBNGEzZkRhYzE4YThkMzBCMjU0NUY1MzIwYTlEMTVDYTY3NWI5MTJmIiwibWlsaV9hcGlfc2VjcmV0IjoibzdtOU9JbklESEJwbWN1YzFJY2wzamZISjJlc0k0UUdGMVJTdXJta1VCUU0xcXE5IiwibWlsaV9kaXlfbmFtZSI6IuS4reexs0FJIiwibWlsaV9tb2RlIjoiMSIsIm1pbGlfc29ydCI6IjIiLCJtaWxpX2Zhc3QiOiIwIiwibGlua2VyX2FwaV9rZXkiOiIiLCJsaW5rZXJfZGl5X25hbWUiOiIiLCJsaW5rZXJfbW9kZSI6IjAiLCJsaW5rZXJfc29ydCI6IjEiLCJrZXl3b3JkcyI6W10sImtleXdvcmRfZmlsdHJhdGlvbiI6WyLlpKnlronpl6giLCLlnablhYsiLCLmmrTooYwiLCLmmrTpnLIiLCLpnZ7ms5UiLCLmr5Llk4EiLCLoibLmg4UiXSwidGVybWluYWwiOlsiNyIsIjEiLCIyIl0sIm1wX3Rpa3RvayI6eyJjb252ZXJ0IjoiMiIsIm1vZGUiOlsic2NvcmUiLCJzZWVfYWQiXX0sIm1wX3dlY2hhdCI6eyJjb252ZXJ0IjoiMSIsIm1vZGUiOlsic2NvcmUiXX0sIm9hX3dlaXhpbiI6eyJtb2RlIjpbInNjb3JlIl0sImNvbnZlcnQiOiIxIn19fQ==",
+            "encoding": "base64"
+          },
+          "redirectURL": null,
+          "headersSize": 427,
+          "bodySize": 679
+        },
+        "serverIPAddress": "120.77.37.130",
+        "cache": {},
+        "timings": {
+          "dns": -1,
+          "connect": -1,
+          "ssl": -1,
+          "send": 0,
+          "wait": 82,
+          "receive": 0
+        }
+      },
+      {
+        "startedDateTime": "2023-10-02T15:41:54.186+08:00",
+        "time": 89,
+        "request": {
+          "method": "POST",
+          "url": "https://aibox.copyppt.com/adminapi/ai_setting/setConfig",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [
+            {
+              "name": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "thinkphp_show_page_trace",
+              "value": "0|0"
+            }
+          ],
+          "headers": [
+            {
+              "name": ":method",
+              "value": "POST"
+            },
+            {
+              "name": ":authority",
+              "value": "aibox.copyppt.com"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": ":path",
+              "value": "/adminapi/ai_setting/setConfig"
+            },
+            {
+              "name": "content-length",
+              "value": "679"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\""
+            },
+            {
+              "name": "version",
+              "value": "1.6.0"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json;charset=UTF-8"
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "token",
+              "value": "545f3b49c65e1196e2fcb6ac042cadde"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"macOS\""
+            },
+            {
+              "name": "origin",
+              "value": "https://aibox.copyppt.com"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "referer",
+              "value": "https://aibox.copyppt.com/admin/aidraw/aidraw.config/setting"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,zh-TW;q=0.8,en;q=0.7,und;q=0.6,ja;q=0.5,da;q=0.4"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "thinkphp_show_page_trace=0|0"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "application/json;charset=UTF-8",
+            "text": "{\"api_key\":\"0\",\"api_secret\":\"0\",\"yijian_diy_name\":\"0\",\"yijian_mode\":\"0\",\"yijian_sort\":\"3\",\"mili_api_key\":\"0xA4a3fDac18a8d30B2545F5320a9D15Ca675b912f\",\"mili_api_secret\":\"o7m9OInIDHBpmcuc1Icl3jfHJ2esI4QGF1RSurmkUBQM1qq9\",\"mili_diy_name\":\"中米AI\",\"mili_mode\":\"1\",\"mili_sort\":\"2\",\"mili_fast\":\"0\",\"linker_diy_name\":\"\",\"linker_api_key\":\"\",\"linker_mode\":\"0\",\"linker_sort\":\"1\",\"platform\":\"yijian\",\"keywords\":[],\"keyword_filtration\":[\"天安门\",\"坦克\",\"暴行\",\"暴露\",\"非法\",\"毒品\",\"色情\"],\"terminal\":[\"7\",\"1\",\"2\"],\"mp_tiktok\":{\"convert\":\"2\",\"mode\":[\"score\",\"see_ad\"]},\"mp_wechat\":{\"convert\":\"1\",\"mode\":[\"score\"]},\"oa_weixin\":{\"mode\":[\"score\"],\"convert\":\"1\"},\"type\":\"aidraw\"}"
+          },
+          "headersSize": 28,
+          "bodySize": 679
+        },
+        "response": {
+          "_charlesStatus": "COMPLETE",
+          "status": 200,
+          "statusText": null,
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":status",
+              "value": "200"
+            },
+            {
+              "name": "server",
+              "value": "nginx"
+            },
+            {
+              "name": "date",
+              "value": "Mon, 02 Oct 2023 07:41:54 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "access-control-allow-headers",
+              "value": "Authorization, Sec-Fetch-Mode, DNT, X-Mx-ReqToken, Keep-Alive, User-Agent, If-Match, If-None-Match, If-Unmodified-Since, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type, Accept-Language, Origin, Accept-Encoding,Access-Token,token,version"
+            },
+            {
+              "name": "access-control-allow-methods",
+              "value": "GET, POST, PATCH, PUT, DELETE, post"
+            },
+            {
+              "name": "access-control-max-age",
+              "value": "1728000"
+            },
+            {
+              "name": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=31536000"
+            }
+          ],
+          "content": {
+            "size": 50,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "eyJjb2RlIjoxLCJzaG93IjoxLCJtc2ciOiLorr7nva7miJDlip8iLCJkYXRhIjpbXX0=",
+            "encoding": "base64"
+          },
+          "redirectURL": null,
+          "headersSize": 427,
+          "bodySize": 50
+        },
+        "serverIPAddress": "120.77.37.130",
+        "cache": {},
+        "timings": {
+          "dns": -1,
+          "connect": -1,
+          "ssl": -1,
+          "send": 0,
+          "wait": 89,
+          "receive": 0
+        }
+      },
+      {
+        "startedDateTime": "2023-10-02T15:41:54.283+08:00",
+        "time": 100,
+        "request": {
+          "method": "GET",
+          "url": "https://aibox.copyppt.com/adminapi/ai_setting/getConfig?type=aidraw",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [
+            {
+              "name": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "thinkphp_show_page_trace",
+              "value": "0|0"
+            }
+          ],
+          "headers": [
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":authority",
+              "value": "aibox.copyppt.com"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": ":path",
+              "value": "/adminapi/ai_setting/getConfig?type=aidraw"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\""
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "version",
+              "value": "1.6.0"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "token",
+              "value": "545f3b49c65e1196e2fcb6ac042cadde"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"macOS\""
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "referer",
+              "value": "https://aibox.copyppt.com/admin/aidraw/aidraw.config/setting"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,zh-TW;q=0.8,en;q=0.7,und;q=0.6,ja;q=0.5,da;q=0.4"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "thinkphp_show_page_trace=0|0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "type",
+              "value": "aidraw"
+            }
+          ],
+          "headersSize": 21,
+          "bodySize": 0
+        },
+        "response": {
+          "_charlesStatus": "COMPLETE",
+          "status": 200,
+          "statusText": null,
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":status",
+              "value": "200"
+            },
+            {
+              "name": "server",
+              "value": "nginx"
+            },
+            {
+              "name": "date",
+              "value": "Mon, 02 Oct 2023 07:41:54 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "access-control-allow-headers",
+              "value": "Authorization, Sec-Fetch-Mode, DNT, X-Mx-ReqToken, Keep-Alive, User-Agent, If-Match, If-None-Match, If-Unmodified-Since, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type, Accept-Language, Origin, Accept-Encoding,Access-Token,token,version"
+            },
+            {
+              "name": "access-control-allow-methods",
+              "value": "GET, POST, PATCH, PUT, DELETE, post"
+            },
+            {
+              "name": "access-control-max-age",
+              "value": "1728000"
+            },
+            {
+              "name": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=31536000"
+            }
+          ],
+          "content": {
+            "size": 679,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "eyJjb2RlIjoxLCJzaG93IjowLCJtc2ciOiIiLCJkYXRhIjp7ImFwaV9rZXkiOiIwIiwiYXBpX3NlY3JldCI6IjAiLCJ5aWppYW5fZGl5X25hbWUiOiIwIiwieWlqaWFuX21vZGUiOiIwIiwieWlqaWFuX3NvcnQiOiIzIiwibWlsaV9hcGlfa2V5IjoiMHhBNGEzZkRhYzE4YThkMzBCMjU0NUY1MzIwYTlEMTVDYTY3NWI5MTJmIiwibWlsaV9hcGlfc2VjcmV0IjoibzdtOU9JbklESEJwbWN1YzFJY2wzamZISjJlc0k0UUdGMVJTdXJta1VCUU0xcXE5IiwibWlsaV9kaXlfbmFtZSI6IuS4reexs0FJIiwibWlsaV9tb2RlIjoiMSIsIm1pbGlfc29ydCI6IjIiLCJtaWxpX2Zhc3QiOiIwIiwibGlua2VyX2FwaV9rZXkiOiIiLCJsaW5rZXJfZGl5X25hbWUiOiIiLCJsaW5rZXJfbW9kZSI6IjAiLCJsaW5rZXJfc29ydCI6IjEiLCJrZXl3b3JkcyI6W10sImtleXdvcmRfZmlsdHJhdGlvbiI6WyLlpKnlronpl6giLCLlnablhYsiLCLmmrTooYwiLCLmmrTpnLIiLCLpnZ7ms5UiLCLmr5Llk4EiLCLoibLmg4UiXSwidGVybWluYWwiOlsiNyIsIjEiLCIyIl0sIm1wX3Rpa3RvayI6eyJjb252ZXJ0IjoiMiIsIm1vZGUiOlsic2NvcmUiLCJzZWVfYWQiXX0sIm1wX3dlY2hhdCI6eyJjb252ZXJ0IjoiMSIsIm1vZGUiOlsic2NvcmUiXX0sIm9hX3dlaXhpbiI6eyJtb2RlIjpbInNjb3JlIl0sImNvbnZlcnQiOiIxIn19fQ==",
+            "encoding": "base64"
+          },
+          "redirectURL": null,
+          "headersSize": 427,
+          "bodySize": 679
+        },
+        "serverIPAddress": "120.77.37.130",
+        "cache": {},
+        "timings": {
+          "dns": -1,
+          "connect": -1,
+          "ssl": -1,
+          "send": 0,
+          "wait": 100,
+          "receive": 0
+        }
+      },
+      {
+        "startedDateTime": "2023-10-02T15:41:58.188+08:00",
+        "time": 91,
+        "request": {
+          "method": "POST",
+          "url": "https://aibox.copyppt.com/adminapi/ai_setting/setConfig",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [
+            {
+              "name": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "thinkphp_show_page_trace",
+              "value": "0|0"
+            }
+          ],
+          "headers": [
+            {
+              "name": ":method",
+              "value": "POST"
+            },
+            {
+              "name": ":authority",
+              "value": "aibox.copyppt.com"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": ":path",
+              "value": "/adminapi/ai_setting/setConfig"
+            },
+            {
+              "name": "content-length",
+              "value": "679"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\""
+            },
+            {
+              "name": "version",
+              "value": "1.6.0"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json;charset=UTF-8"
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "token",
+              "value": "545f3b49c65e1196e2fcb6ac042cadde"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"macOS\""
+            },
+            {
+              "name": "origin",
+              "value": "https://aibox.copyppt.com"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "referer",
+              "value": "https://aibox.copyppt.com/admin/aidraw/aidraw.config/setting"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,zh-TW;q=0.8,en;q=0.7,und;q=0.6,ja;q=0.5,da;q=0.4"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "thinkphp_show_page_trace=0|0"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "application/json;charset=UTF-8",
+            "text": "{\"api_key\":\"0\",\"api_secret\":\"0\",\"yijian_diy_name\":\"0\",\"yijian_mode\":\"0\",\"yijian_sort\":\"3\",\"mili_api_key\":\"0xA4a3fDac18a8d30B2545F5320a9D15Ca675b912f\",\"mili_api_secret\":\"o7m9OInIDHBpmcuc1Icl3jfHJ2esI4QGF1RSurmkUBQM1qq9\",\"mili_diy_name\":\"中米AI\",\"mili_mode\":\"1\",\"mili_sort\":\"2\",\"mili_fast\":\"0\",\"linker_diy_name\":\"\",\"linker_api_key\":\"\",\"linker_mode\":\"0\",\"linker_sort\":\"1\",\"platform\":\"yijian\",\"keywords\":[],\"keyword_filtration\":[\"天安门\",\"坦克\",\"暴行\",\"暴露\",\"非法\",\"毒品\",\"色情\"],\"terminal\":[\"7\",\"1\",\"2\"],\"mp_tiktok\":{\"convert\":\"2\",\"mode\":[\"score\",\"see_ad\"]},\"mp_wechat\":{\"convert\":\"1\",\"mode\":[\"score\"]},\"oa_weixin\":{\"mode\":[\"score\"],\"convert\":\"1\"},\"type\":\"aidraw\"}"
+          },
+          "headersSize": 24,
+          "bodySize": 679
+        },
+        "response": {
+          "_charlesStatus": "COMPLETE",
+          "status": 200,
+          "statusText": null,
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":status",
+              "value": "200"
+            },
+            {
+              "name": "server",
+              "value": "nginx"
+            },
+            {
+              "name": "date",
+              "value": "Mon, 02 Oct 2023 07:41:58 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "access-control-allow-headers",
+              "value": "Authorization, Sec-Fetch-Mode, DNT, X-Mx-ReqToken, Keep-Alive, User-Agent, If-Match, If-None-Match, If-Unmodified-Since, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type, Accept-Language, Origin, Accept-Encoding,Access-Token,token,version"
+            },
+            {
+              "name": "access-control-allow-methods",
+              "value": "GET, POST, PATCH, PUT, DELETE, post"
+            },
+            {
+              "name": "access-control-max-age",
+              "value": "1728000"
+            },
+            {
+              "name": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=31536000"
+            }
+          ],
+          "content": {
+            "size": 50,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "eyJjb2RlIjoxLCJzaG93IjoxLCJtc2ciOiLorr7nva7miJDlip8iLCJkYXRhIjpbXX0=",
+            "encoding": "base64"
+          },
+          "redirectURL": null,
+          "headersSize": 427,
+          "bodySize": 50
+        },
+        "serverIPAddress": "120.77.37.130",
+        "cache": {},
+        "timings": {
+          "dns": -1,
+          "connect": -1,
+          "ssl": -1,
+          "send": 0,
+          "wait": 91,
+          "receive": 0
+        }
+      },
+      {
+        "startedDateTime": "2023-10-02T15:41:58.287+08:00",
+        "time": 80,
+        "request": {
+          "method": "GET",
+          "url": "https://aibox.copyppt.com/adminapi/ai_setting/getConfig?type=aidraw",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [
+            {
+              "name": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "thinkphp_show_page_trace",
+              "value": "0|0"
+            }
+          ],
+          "headers": [
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":authority",
+              "value": "aibox.copyppt.com"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": ":path",
+              "value": "/adminapi/ai_setting/getConfig?type=aidraw"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\""
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "version",
+              "value": "1.6.0"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "token",
+              "value": "545f3b49c65e1196e2fcb6ac042cadde"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"macOS\""
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "referer",
+              "value": "https://aibox.copyppt.com/admin/aidraw/aidraw.config/setting"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,zh-TW;q=0.8,en;q=0.7,und;q=0.6,ja;q=0.5,da;q=0.4"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "thinkphp_show_page_trace=0|0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "type",
+              "value": "aidraw"
+            }
+          ],
+          "headersSize": 21,
+          "bodySize": 0
+        },
+        "response": {
+          "_charlesStatus": "COMPLETE",
+          "status": 200,
+          "statusText": null,
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":status",
+              "value": "200"
+            },
+            {
+              "name": "server",
+              "value": "nginx"
+            },
+            {
+              "name": "date",
+              "value": "Mon, 02 Oct 2023 07:41:58 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "access-control-allow-headers",
+              "value": "Authorization, Sec-Fetch-Mode, DNT, X-Mx-ReqToken, Keep-Alive, User-Agent, If-Match, If-None-Match, If-Unmodified-Since, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type, Accept-Language, Origin, Accept-Encoding,Access-Token,token,version"
+            },
+            {
+              "name": "access-control-allow-methods",
+              "value": "GET, POST, PATCH, PUT, DELETE, post"
+            },
+            {
+              "name": "access-control-max-age",
+              "value": "1728000"
+            },
+            {
+              "name": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=31536000"
+            }
+          ],
+          "content": {
+            "size": 679,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "eyJjb2RlIjoxLCJzaG93IjowLCJtc2ciOiIiLCJkYXRhIjp7ImFwaV9rZXkiOiIwIiwiYXBpX3NlY3JldCI6IjAiLCJ5aWppYW5fZGl5X25hbWUiOiIwIiwieWlqaWFuX21vZGUiOiIwIiwieWlqaWFuX3NvcnQiOiIzIiwibWlsaV9hcGlfa2V5IjoiMHhBNGEzZkRhYzE4YThkMzBCMjU0NUY1MzIwYTlEMTVDYTY3NWI5MTJmIiwibWlsaV9hcGlfc2VjcmV0IjoibzdtOU9JbklESEJwbWN1YzFJY2wzamZISjJlc0k0UUdGMVJTdXJta1VCUU0xcXE5IiwibWlsaV9kaXlfbmFtZSI6IuS4reexs0FJIiwibWlsaV9tb2RlIjoiMSIsIm1pbGlfc29ydCI6IjIiLCJtaWxpX2Zhc3QiOiIwIiwibGlua2VyX2FwaV9rZXkiOiIiLCJsaW5rZXJfZGl5X25hbWUiOiIiLCJsaW5rZXJfbW9kZSI6IjAiLCJsaW5rZXJfc29ydCI6IjEiLCJrZXl3b3JkcyI6W10sImtleXdvcmRfZmlsdHJhdGlvbiI6WyLlpKnlronpl6giLCLlnablhYsiLCLmmrTooYwiLCLmmrTpnLIiLCLpnZ7ms5UiLCLmr5Llk4EiLCLoibLmg4UiXSwidGVybWluYWwiOlsiNyIsIjEiLCIyIl0sIm1wX3Rpa3RvayI6eyJjb252ZXJ0IjoiMiIsIm1vZGUiOlsic2NvcmUiLCJzZWVfYWQiXX0sIm1wX3dlY2hhdCI6eyJjb252ZXJ0IjoiMSIsIm1vZGUiOlsic2NvcmUiXX0sIm9hX3dlaXhpbiI6eyJtb2RlIjpbInNjb3JlIl0sImNvbnZlcnQiOiIxIn19fQ==",
+            "encoding": "base64"
+          },
+          "redirectURL": null,
+          "headersSize": 427,
+          "bodySize": 679
+        },
+        "serverIPAddress": "120.77.37.130",
+        "cache": {},
+        "timings": {
+          "dns": -1,
+          "connect": -1,
+          "ssl": -1,
+          "send": 0,
+          "wait": 80,
+          "receive": 0
+        }
+      },
+      {
+        "startedDateTime": "2023-10-02T15:42:45.339+08:00",
+        "time": 87,
+        "request": {
+          "method": "GET",
+          "url": "https://aibox.copyppt.com/adminapi/ai_setting/getConfig?type=image_to_cartoon",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [
+            {
+              "name": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "thinkphp_show_page_trace",
+              "value": "0|0"
+            }
+          ],
+          "headers": [
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":authority",
+              "value": "aibox.copyppt.com"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": ":path",
+              "value": "/adminapi/ai_setting/getConfig?type=image_to_cartoon"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\""
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "version",
+              "value": "1.6.0"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "token",
+              "value": "545f3b49c65e1196e2fcb6ac042cadde"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"macOS\""
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "referer",
+              "value": "https://aibox.copyppt.com/admin/imageCartoon/cartoonConfig"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,zh-TW;q=0.8,en;q=0.7,und;q=0.6,ja;q=0.5,da;q=0.4"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "thinkphp_show_page_trace=0|0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "type",
+              "value": "image_to_cartoon"
+            }
+          ],
+          "headersSize": 421,
+          "bodySize": 0
+        },
+        "response": {
+          "_charlesStatus": "COMPLETE",
+          "status": 200,
+          "statusText": null,
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":status",
+              "value": "200"
+            },
+            {
+              "name": "server",
+              "value": "nginx"
+            },
+            {
+              "name": "date",
+              "value": "Mon, 02 Oct 2023 07:42:45 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "access-control-allow-headers",
+              "value": "Authorization, Sec-Fetch-Mode, DNT, X-Mx-ReqToken, Keep-Alive, User-Agent, If-Match, If-None-Match, If-Unmodified-Since, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type, Accept-Language, Origin, Accept-Encoding,Access-Token,token,version"
+            },
+            {
+              "name": "access-control-allow-methods",
+              "value": "GET, POST, PATCH, PUT, DELETE, post"
+            },
+            {
+              "name": "access-control-max-age",
+              "value": "1728000"
+            },
+            {
+              "name": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=31536000"
+            }
+          ],
+          "content": {
+            "size": 297,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "eyJjb2RlIjoxLCJzaG93IjowLCJtc2ciOiIiLCJkYXRhIjp7InRlcm1pbmFsIjpbIjciLCIxIiwiMiJdLCJhbGl5dW5fYWNjZXNzX2tleSI6IkxUQUk1dEYzdWh2UW9DZG5XMnFSano5UiIsImFsaXl1bl9zZWNyZXRfa2V5IjoicnlqQUlLM1JQQ0RjN25kQW5XMmpJbHp3UFc0SFdEIiwibXBfdGlrdG9rIjp7ImNvbnZlcnQiOiIxIiwibW9kZSI6WyJzY29yZSJdfSwibXBfd2VjaGF0Ijp7ImNvbnZlcnQiOiIxIiwibW9kZSI6WyJzY29yZSJdfSwib2Ffd2VpeGluIjp7Im1vZGUiOlsic2NvcmUiXSwiY29udmVydCI6IjEifX19",
+            "encoding": "base64"
+          },
+          "redirectURL": null,
+          "headersSize": 427,
+          "bodySize": 297
+        },
+        "serverIPAddress": "120.77.37.130",
+        "cache": {},
+        "timings": {
+          "dns": -1,
+          "connect": -1,
+          "ssl": -1,
+          "send": 1,
+          "wait": 86,
+          "receive": 0
+        }
+      },
+      {
+        "startedDateTime": "2023-10-02T15:42:47.233+08:00",
+        "time": 106,
+        "request": {
+          "method": "POST",
+          "url": "https://aibox.copyppt.com/adminapi/ai_setting/setConfig",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [
+            {
+              "name": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "thinkphp_show_page_trace",
+              "value": "0|0"
+            }
+          ],
+          "headers": [
+            {
+              "name": ":method",
+              "value": "POST"
+            },
+            {
+              "name": ":authority",
+              "value": "aibox.copyppt.com"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": ":path",
+              "value": "/adminapi/ai_setting/setConfig"
+            },
+            {
+              "name": "content-length",
+              "value": "281"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\""
+            },
+            {
+              "name": "version",
+              "value": "1.6.0"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json;charset=UTF-8"
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "token",
+              "value": "545f3b49c65e1196e2fcb6ac042cadde"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"macOS\""
+            },
+            {
+              "name": "origin",
+              "value": "https://aibox.copyppt.com"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "referer",
+              "value": "https://aibox.copyppt.com/admin/imageCartoon/cartoonConfig"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,zh-TW;q=0.8,en;q=0.7,und;q=0.6,ja;q=0.5,da;q=0.4"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "thinkphp_show_page_trace=0|0"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "application/json;charset=UTF-8",
+            "text": "{\"aliyun_access_key\":\"LTAI5tF3uhvQoCdnW2qRjz9R\",\"aliyun_secret_key\":\"ryjAIK3RPCDc7ndAnW2jIlzwPW4HWD\",\"terminal\":[\"7\",\"1\",\"2\"],\"mp_tiktok\":{\"convert\":1,\"mode\":[\"score\"]},\"mp_wechat\":{\"convert\":1,\"mode\":[\"score\"]},\"oa_weixin\":{\"mode\":[\"score\"],\"convert\":1},\"type\":\"image_to_cartoon\"}"
+          },
+          "headersSize": 49,
+          "bodySize": 281
+        },
+        "response": {
+          "_charlesStatus": "COMPLETE",
+          "status": 200,
+          "statusText": null,
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":status",
+              "value": "200"
+            },
+            {
+              "name": "server",
+              "value": "nginx"
+            },
+            {
+              "name": "date",
+              "value": "Mon, 02 Oct 2023 07:42:47 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "access-control-allow-headers",
+              "value": "Authorization, Sec-Fetch-Mode, DNT, X-Mx-ReqToken, Keep-Alive, User-Agent, If-Match, If-None-Match, If-Unmodified-Since, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type, Accept-Language, Origin, Accept-Encoding,Access-Token,token,version"
+            },
+            {
+              "name": "access-control-allow-methods",
+              "value": "GET, POST, PATCH, PUT, DELETE, post"
+            },
+            {
+              "name": "access-control-max-age",
+              "value": "1728000"
+            },
+            {
+              "name": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=31536000"
+            }
+          ],
+          "content": {
+            "size": 50,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "eyJjb2RlIjoxLCJzaG93IjoxLCJtc2ciOiLorr7nva7miJDlip8iLCJkYXRhIjpbXX0=",
+            "encoding": "base64"
+          },
+          "redirectURL": null,
+          "headersSize": 427,
+          "bodySize": 50
+        },
+        "serverIPAddress": "120.77.37.130",
+        "cache": {},
+        "timings": {
+          "dns": -1,
+          "connect": -1,
+          "ssl": -1,
+          "send": 0,
+          "wait": 105,
+          "receive": 1
+        }
+      },
+      {
+        "startedDateTime": "2023-10-02T15:42:47.346+08:00",
+        "time": 84,
+        "request": {
+          "method": "GET",
+          "url": "https://aibox.copyppt.com/adminapi/ai_setting/getConfig?type=image_to_cartoon",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [
+            {
+              "name": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "thinkphp_show_page_trace",
+              "value": "0|0"
+            }
+          ],
+          "headers": [
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":authority",
+              "value": "aibox.copyppt.com"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": ":path",
+              "value": "/adminapi/ai_setting/getConfig?type=image_to_cartoon"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\""
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "version",
+              "value": "1.6.0"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "token",
+              "value": "545f3b49c65e1196e2fcb6ac042cadde"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"macOS\""
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "referer",
+              "value": "https://aibox.copyppt.com/admin/imageCartoon/cartoonConfig"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,zh-TW;q=0.8,en;q=0.7,und;q=0.6,ja;q=0.5,da;q=0.4"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "thinkphp_show_page_trace=0|0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "type",
+              "value": "image_to_cartoon"
+            }
+          ],
+          "headersSize": 21,
+          "bodySize": 0
+        },
+        "response": {
+          "_charlesStatus": "COMPLETE",
+          "status": 200,
+          "statusText": null,
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":status",
+              "value": "200"
+            },
+            {
+              "name": "server",
+              "value": "nginx"
+            },
+            {
+              "name": "date",
+              "value": "Mon, 02 Oct 2023 07:42:47 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "access-control-allow-headers",
+              "value": "Authorization, Sec-Fetch-Mode, DNT, X-Mx-ReqToken, Keep-Alive, User-Agent, If-Match, If-None-Match, If-Unmodified-Since, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type, Accept-Language, Origin, Accept-Encoding,Access-Token,token,version"
+            },
+            {
+              "name": "access-control-allow-methods",
+              "value": "GET, POST, PATCH, PUT, DELETE, post"
+            },
+            {
+              "name": "access-control-max-age",
+              "value": "1728000"
+            },
+            {
+              "name": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=31536000"
+            }
+          ],
+          "content": {
+            "size": 297,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "eyJjb2RlIjoxLCJzaG93IjowLCJtc2ciOiIiLCJkYXRhIjp7InRlcm1pbmFsIjpbIjciLCIxIiwiMiJdLCJhbGl5dW5fYWNjZXNzX2tleSI6IkxUQUk1dEYzdWh2UW9DZG5XMnFSano5UiIsImFsaXl1bl9zZWNyZXRfa2V5IjoicnlqQUlLM1JQQ0RjN25kQW5XMmpJbHp3UFc0SFdEIiwibXBfdGlrdG9rIjp7ImNvbnZlcnQiOiIxIiwibW9kZSI6WyJzY29yZSJdfSwibXBfd2VjaGF0Ijp7ImNvbnZlcnQiOiIxIiwibW9kZSI6WyJzY29yZSJdfSwib2Ffd2VpeGluIjp7Im1vZGUiOlsic2NvcmUiXSwiY29udmVydCI6IjEifX19",
+            "encoding": "base64"
+          },
+          "redirectURL": null,
+          "headersSize": 427,
+          "bodySize": 297
+        },
+        "serverIPAddress": "120.77.37.130",
+        "cache": {},
+        "timings": {
+          "dns": -1,
+          "connect": -1,
+          "ssl": -1,
+          "send": 1,
+          "wait": 83,
+          "receive": 0
+        }
+      },
+      {
+        "startedDateTime": "2023-10-02T15:43:04.268+08:00",
+        "time": 91,
+        "request": {
+          "method": "POST",
+          "url": "https://aibox.copyppt.com/adminapi/ai_setting/setConfig",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [
+            {
+              "name": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "thinkphp_show_page_trace",
+              "value": "0|0"
+            }
+          ],
+          "headers": [
+            {
+              "name": ":method",
+              "value": "POST"
+            },
+            {
+              "name": ":authority",
+              "value": "aibox.copyppt.com"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": ":path",
+              "value": "/adminapi/ai_setting/setConfig"
+            },
+            {
+              "name": "content-length",
+              "value": "287"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\""
+            },
+            {
+              "name": "version",
+              "value": "1.6.0"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json;charset=UTF-8"
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "token",
+              "value": "545f3b49c65e1196e2fcb6ac042cadde"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"macOS\""
+            },
+            {
+              "name": "origin",
+              "value": "https://aibox.copyppt.com"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "referer",
+              "value": "https://aibox.copyppt.com/admin/imageCartoon/cartoonConfig"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,zh-TW;q=0.8,en;q=0.7,und;q=0.6,ja;q=0.5,da;q=0.4"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "thinkphp_show_page_trace=0|0"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "application/json;charset=UTF-8",
+            "text": "{\"aliyun_access_key\":\"LTAI5tF3uhvQoCdnW2qRjz9R\",\"aliyun_secret_key\":\"ryjAIK3RPCDc7ndAnW2jIlzwPW4HWD\",\"terminal\":[\"7\",\"1\",\"2\"],\"mp_tiktok\":{\"convert\":\"1\",\"mode\":[\"score\"]},\"mp_wechat\":{\"convert\":\"1\",\"mode\":[\"score\"]},\"oa_weixin\":{\"mode\":[\"score\"],\"convert\":\"1\"},\"type\":\"image_to_cartoon\"}"
+          },
+          "headersSize": 28,
+          "bodySize": 287
+        },
+        "response": {
+          "_charlesStatus": "COMPLETE",
+          "status": 200,
+          "statusText": null,
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":status",
+              "value": "200"
+            },
+            {
+              "name": "server",
+              "value": "nginx"
+            },
+            {
+              "name": "date",
+              "value": "Mon, 02 Oct 2023 07:43:04 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "access-control-allow-headers",
+              "value": "Authorization, Sec-Fetch-Mode, DNT, X-Mx-ReqToken, Keep-Alive, User-Agent, If-Match, If-None-Match, If-Unmodified-Since, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type, Accept-Language, Origin, Accept-Encoding,Access-Token,token,version"
+            },
+            {
+              "name": "access-control-allow-methods",
+              "value": "GET, POST, PATCH, PUT, DELETE, post"
+            },
+            {
+              "name": "access-control-max-age",
+              "value": "1728000"
+            },
+            {
+              "name": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=31536000"
+            }
+          ],
+          "content": {
+            "size": 50,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "eyJjb2RlIjoxLCJzaG93IjoxLCJtc2ciOiLorr7nva7miJDlip8iLCJkYXRhIjpbXX0=",
+            "encoding": "base64"
+          },
+          "redirectURL": null,
+          "headersSize": 427,
+          "bodySize": 50
+        },
+        "serverIPAddress": "120.77.37.130",
+        "cache": {},
+        "timings": {
+          "dns": -1,
+          "connect": -1,
+          "ssl": -1,
+          "send": 0,
+          "wait": 91,
+          "receive": 0
+        }
+      },
+      {
+        "startedDateTime": "2023-10-02T15:43:04.366+08:00",
+        "time": 99,
+        "request": {
+          "method": "GET",
+          "url": "https://aibox.copyppt.com/adminapi/ai_setting/getConfig?type=image_to_cartoon",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [
+            {
+              "name": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "thinkphp_show_page_trace",
+              "value": "0|0"
+            }
+          ],
+          "headers": [
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":authority",
+              "value": "aibox.copyppt.com"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": ":path",
+              "value": "/adminapi/ai_setting/getConfig?type=image_to_cartoon"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\""
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "version",
+              "value": "1.6.0"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "token",
+              "value": "545f3b49c65e1196e2fcb6ac042cadde"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"macOS\""
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "referer",
+              "value": "https://aibox.copyppt.com/admin/imageCartoon/cartoonConfig"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,zh-TW;q=0.8,en;q=0.7,und;q=0.6,ja;q=0.5,da;q=0.4"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "thinkphp_show_page_trace=0|0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "type",
+              "value": "image_to_cartoon"
+            }
+          ],
+          "headersSize": 21,
+          "bodySize": 0
+        },
+        "response": {
+          "_charlesStatus": "COMPLETE",
+          "status": 200,
+          "statusText": null,
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":status",
+              "value": "200"
+            },
+            {
+              "name": "server",
+              "value": "nginx"
+            },
+            {
+              "name": "date",
+              "value": "Mon, 02 Oct 2023 07:43:04 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "access-control-allow-headers",
+              "value": "Authorization, Sec-Fetch-Mode, DNT, X-Mx-ReqToken, Keep-Alive, User-Agent, If-Match, If-None-Match, If-Unmodified-Since, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type, Accept-Language, Origin, Accept-Encoding,Access-Token,token,version"
+            },
+            {
+              "name": "access-control-allow-methods",
+              "value": "GET, POST, PATCH, PUT, DELETE, post"
+            },
+            {
+              "name": "access-control-max-age",
+              "value": "1728000"
+            },
+            {
+              "name": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=31536000"
+            }
+          ],
+          "content": {
+            "size": 297,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "eyJjb2RlIjoxLCJzaG93IjowLCJtc2ciOiIiLCJkYXRhIjp7InRlcm1pbmFsIjpbIjciLCIxIiwiMiJdLCJhbGl5dW5fYWNjZXNzX2tleSI6IkxUQUk1dEYzdWh2UW9DZG5XMnFSano5UiIsImFsaXl1bl9zZWNyZXRfa2V5IjoicnlqQUlLM1JQQ0RjN25kQW5XMmpJbHp3UFc0SFdEIiwibXBfdGlrdG9rIjp7ImNvbnZlcnQiOiIxIiwibW9kZSI6WyJzY29yZSJdfSwibXBfd2VjaGF0Ijp7ImNvbnZlcnQiOiIxIiwibW9kZSI6WyJzY29yZSJdfSwib2Ffd2VpeGluIjp7Im1vZGUiOlsic2NvcmUiXSwiY29udmVydCI6IjEifX19",
+            "encoding": "base64"
+          },
+          "redirectURL": null,
+          "headersSize": 427,
+          "bodySize": 297
+        },
+        "serverIPAddress": "120.77.37.130",
+        "cache": {},
+        "timings": {
+          "dns": -1,
+          "connect": -1,
+          "ssl": -1,
+          "send": 0,
+          "wait": 98,
+          "receive": 1
+        }
+      },
+      {
+        "startedDateTime": "2023-10-02T15:43:12.550+08:00",
+        "time": 105,
+        "request": {
+          "method": "POST",
+          "url": "https://aibox.copyppt.com/adminapi/ai_setting/setConfig",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [
+            {
+              "name": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "thinkphp_show_page_trace",
+              "value": "0|0"
+            }
+          ],
+          "headers": [
+            {
+              "name": ":method",
+              "value": "POST"
+            },
+            {
+              "name": ":authority",
+              "value": "aibox.copyppt.com"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": ":path",
+              "value": "/adminapi/ai_setting/setConfig"
+            },
+            {
+              "name": "content-length",
+              "value": "285"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\""
+            },
+            {
+              "name": "version",
+              "value": "1.6.0"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json;charset=UTF-8"
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "token",
+              "value": "545f3b49c65e1196e2fcb6ac042cadde"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"macOS\""
+            },
+            {
+              "name": "origin",
+              "value": "https://aibox.copyppt.com"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "referer",
+              "value": "https://aibox.copyppt.com/admin/imageCartoon/cartoonConfig"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,zh-TW;q=0.8,en;q=0.7,und;q=0.6,ja;q=0.5,da;q=0.4"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "thinkphp_show_page_trace=0|0"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "application/json;charset=UTF-8",
+            "text": "{\"aliyun_access_key\":\"LTAI5tF3uhvQoCdnW2qRjz9R\",\"aliyun_secret_key\":\"ryjAIK3RPCDc7ndAnW2jIlzwPW4HWD\",\"terminal\":[\"7\",\"1\",\"2\"],\"mp_tiktok\":{\"convert\":2,\"mode\":[\"score\"]},\"mp_wechat\":{\"convert\":\"1\",\"mode\":[\"score\"]},\"oa_weixin\":{\"mode\":[\"score\"],\"convert\":\"1\"},\"type\":\"image_to_cartoon\"}"
+          },
+          "headersSize": 28,
+          "bodySize": 285
+        },
+        "response": {
+          "_charlesStatus": "COMPLETE",
+          "status": 200,
+          "statusText": null,
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":status",
+              "value": "200"
+            },
+            {
+              "name": "server",
+              "value": "nginx"
+            },
+            {
+              "name": "date",
+              "value": "Mon, 02 Oct 2023 07:43:12 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "access-control-allow-headers",
+              "value": "Authorization, Sec-Fetch-Mode, DNT, X-Mx-ReqToken, Keep-Alive, User-Agent, If-Match, If-None-Match, If-Unmodified-Since, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type, Accept-Language, Origin, Accept-Encoding,Access-Token,token,version"
+            },
+            {
+              "name": "access-control-allow-methods",
+              "value": "GET, POST, PATCH, PUT, DELETE, post"
+            },
+            {
+              "name": "access-control-max-age",
+              "value": "1728000"
+            },
+            {
+              "name": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=31536000"
+            }
+          ],
+          "content": {
+            "size": 50,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "eyJjb2RlIjoxLCJzaG93IjoxLCJtc2ciOiLorr7nva7miJDlip8iLCJkYXRhIjpbXX0=",
+            "encoding": "base64"
+          },
+          "redirectURL": null,
+          "headersSize": 427,
+          "bodySize": 50
+        },
+        "serverIPAddress": "120.77.37.130",
+        "cache": {},
+        "timings": {
+          "dns": -1,
+          "connect": -1,
+          "ssl": -1,
+          "send": 0,
+          "wait": 104,
+          "receive": 1
+        }
+      },
+      {
+        "startedDateTime": "2023-10-02T15:43:12.661+08:00",
+        "time": 103,
+        "request": {
+          "method": "GET",
+          "url": "https://aibox.copyppt.com/adminapi/ai_setting/getConfig?type=image_to_cartoon",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [
+            {
+              "name": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "thinkphp_show_page_trace",
+              "value": "0|0"
+            }
+          ],
+          "headers": [
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":authority",
+              "value": "aibox.copyppt.com"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": ":path",
+              "value": "/adminapi/ai_setting/getConfig?type=image_to_cartoon"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\""
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "version",
+              "value": "1.6.0"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "token",
+              "value": "545f3b49c65e1196e2fcb6ac042cadde"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"macOS\""
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "referer",
+              "value": "https://aibox.copyppt.com/admin/imageCartoon/cartoonConfig"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,zh-TW;q=0.8,en;q=0.7,und;q=0.6,ja;q=0.5,da;q=0.4"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "thinkphp_show_page_trace=0|0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "type",
+              "value": "image_to_cartoon"
+            }
+          ],
+          "headersSize": 21,
+          "bodySize": 0
+        },
+        "response": {
+          "_charlesStatus": "COMPLETE",
+          "status": 200,
+          "statusText": null,
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":status",
+              "value": "200"
+            },
+            {
+              "name": "server",
+              "value": "nginx"
+            },
+            {
+              "name": "date",
+              "value": "Mon, 02 Oct 2023 07:43:12 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "access-control-allow-headers",
+              "value": "Authorization, Sec-Fetch-Mode, DNT, X-Mx-ReqToken, Keep-Alive, User-Agent, If-Match, If-None-Match, If-Unmodified-Since, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type, Accept-Language, Origin, Accept-Encoding,Access-Token,token,version"
+            },
+            {
+              "name": "access-control-allow-methods",
+              "value": "GET, POST, PATCH, PUT, DELETE, post"
+            },
+            {
+              "name": "access-control-max-age",
+              "value": "1728000"
+            },
+            {
+              "name": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=31536000"
+            }
+          ],
+          "content": {
+            "size": 297,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "eyJjb2RlIjoxLCJzaG93IjowLCJtc2ciOiIiLCJkYXRhIjp7InRlcm1pbmFsIjpbIjciLCIxIiwiMiJdLCJhbGl5dW5fYWNjZXNzX2tleSI6IkxUQUk1dEYzdWh2UW9DZG5XMnFSano5UiIsImFsaXl1bl9zZWNyZXRfa2V5IjoicnlqQUlLM1JQQ0RjN25kQW5XMmpJbHp3UFc0SFdEIiwibXBfdGlrdG9rIjp7ImNvbnZlcnQiOiIyIiwibW9kZSI6WyJzY29yZSJdfSwibXBfd2VjaGF0Ijp7ImNvbnZlcnQiOiIxIiwibW9kZSI6WyJzY29yZSJdfSwib2Ffd2VpeGluIjp7Im1vZGUiOlsic2NvcmUiXSwiY29udmVydCI6IjEifX19",
+            "encoding": "base64"
+          },
+          "redirectURL": null,
+          "headersSize": 427,
+          "bodySize": 297
+        },
+        "serverIPAddress": "120.77.37.130",
+        "cache": {},
+        "timings": {
+          "dns": -1,
+          "connect": -1,
+          "ssl": -1,
+          "send": 0,
+          "wait": 103,
+          "receive": 0
+        }
+      },
+      {
+        "startedDateTime": "2023-10-02T15:43:17.917+08:00",
+        "time": 99,
+        "request": {
+          "method": "POST",
+          "url": "https://aibox.copyppt.com/adminapi/ai_setting/setConfig",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [
+            {
+              "name": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "thinkphp_show_page_trace",
+              "value": "0|0"
+            }
+          ],
+          "headers": [
+            {
+              "name": ":method",
+              "value": "POST"
+            },
+            {
+              "name": ":authority",
+              "value": "aibox.copyppt.com"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": ":path",
+              "value": "/adminapi/ai_setting/setConfig"
+            },
+            {
+              "name": "content-length",
+              "value": "285"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\""
+            },
+            {
+              "name": "version",
+              "value": "1.6.0"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json;charset=UTF-8"
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "token",
+              "value": "545f3b49c65e1196e2fcb6ac042cadde"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"macOS\""
+            },
+            {
+              "name": "origin",
+              "value": "https://aibox.copyppt.com"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "referer",
+              "value": "https://aibox.copyppt.com/admin/imageCartoon/cartoonConfig"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,zh-TW;q=0.8,en;q=0.7,und;q=0.6,ja;q=0.5,da;q=0.4"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "thinkphp_show_page_trace=0|0"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "application/json;charset=UTF-8",
+            "text": "{\"aliyun_access_key\":\"LTAI5tF3uhvQoCdnW2qRjz9R\",\"aliyun_secret_key\":\"ryjAIK3RPCDc7ndAnW2jIlzwPW4HWD\",\"terminal\":[\"7\",\"1\",\"2\"],\"mp_tiktok\":{\"convert\":1,\"mode\":[\"score\"]},\"mp_wechat\":{\"convert\":\"1\",\"mode\":[\"score\"]},\"oa_weixin\":{\"mode\":[\"score\"],\"convert\":\"1\"},\"type\":\"image_to_cartoon\"}"
+          },
+          "headersSize": 24,
+          "bodySize": 285
+        },
+        "response": {
+          "_charlesStatus": "COMPLETE",
+          "status": 200,
+          "statusText": null,
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":status",
+              "value": "200"
+            },
+            {
+              "name": "server",
+              "value": "nginx"
+            },
+            {
+              "name": "date",
+              "value": "Mon, 02 Oct 2023 07:43:18 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "access-control-allow-headers",
+              "value": "Authorization, Sec-Fetch-Mode, DNT, X-Mx-ReqToken, Keep-Alive, User-Agent, If-Match, If-None-Match, If-Unmodified-Since, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type, Accept-Language, Origin, Accept-Encoding,Access-Token,token,version"
+            },
+            {
+              "name": "access-control-allow-methods",
+              "value": "GET, POST, PATCH, PUT, DELETE, post"
+            },
+            {
+              "name": "access-control-max-age",
+              "value": "1728000"
+            },
+            {
+              "name": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=31536000"
+            }
+          ],
+          "content": {
+            "size": 50,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "eyJjb2RlIjoxLCJzaG93IjoxLCJtc2ciOiLorr7nva7miJDlip8iLCJkYXRhIjpbXX0=",
+            "encoding": "base64"
+          },
+          "redirectURL": null,
+          "headersSize": 427,
+          "bodySize": 50
+        },
+        "serverIPAddress": "120.77.37.130",
+        "cache": {},
+        "timings": {
+          "dns": -1,
+          "connect": -1,
+          "ssl": -1,
+          "send": 0,
+          "wait": 99,
+          "receive": 0
+        }
+      },
+      {
+        "startedDateTime": "2023-10-02T15:43:18.024+08:00",
+        "time": 89,
+        "request": {
+          "method": "GET",
+          "url": "https://aibox.copyppt.com/adminapi/ai_setting/getConfig?type=image_to_cartoon",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [
+            {
+              "name": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "thinkphp_show_page_trace",
+              "value": "0|0"
+            }
+          ],
+          "headers": [
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":authority",
+              "value": "aibox.copyppt.com"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": ":path",
+              "value": "/adminapi/ai_setting/getConfig?type=image_to_cartoon"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\""
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "version",
+              "value": "1.6.0"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "token",
+              "value": "545f3b49c65e1196e2fcb6ac042cadde"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"macOS\""
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "referer",
+              "value": "https://aibox.copyppt.com/admin/imageCartoon/cartoonConfig"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,zh-TW;q=0.8,en;q=0.7,und;q=0.6,ja;q=0.5,da;q=0.4"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "thinkphp_show_page_trace=0|0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "type",
+              "value": "image_to_cartoon"
+            }
+          ],
+          "headersSize": 21,
+          "bodySize": 0
+        },
+        "response": {
+          "_charlesStatus": "COMPLETE",
+          "status": 200,
+          "statusText": null,
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":status",
+              "value": "200"
+            },
+            {
+              "name": "server",
+              "value": "nginx"
+            },
+            {
+              "name": "date",
+              "value": "Mon, 02 Oct 2023 07:43:18 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "access-control-allow-headers",
+              "value": "Authorization, Sec-Fetch-Mode, DNT, X-Mx-ReqToken, Keep-Alive, User-Agent, If-Match, If-None-Match, If-Unmodified-Since, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type, Accept-Language, Origin, Accept-Encoding,Access-Token,token,version"
+            },
+            {
+              "name": "access-control-allow-methods",
+              "value": "GET, POST, PATCH, PUT, DELETE, post"
+            },
+            {
+              "name": "access-control-max-age",
+              "value": "1728000"
+            },
+            {
+              "name": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=31536000"
+            }
+          ],
+          "content": {
+            "size": 297,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "eyJjb2RlIjoxLCJzaG93IjowLCJtc2ciOiIiLCJkYXRhIjp7InRlcm1pbmFsIjpbIjciLCIxIiwiMiJdLCJhbGl5dW5fYWNjZXNzX2tleSI6IkxUQUk1dEYzdWh2UW9DZG5XMnFSano5UiIsImFsaXl1bl9zZWNyZXRfa2V5IjoicnlqQUlLM1JQQ0RjN25kQW5XMmpJbHp3UFc0SFdEIiwibXBfdGlrdG9rIjp7ImNvbnZlcnQiOiIxIiwibW9kZSI6WyJzY29yZSJdfSwibXBfd2VjaGF0Ijp7ImNvbnZlcnQiOiIxIiwibW9kZSI6WyJzY29yZSJdfSwib2Ffd2VpeGluIjp7Im1vZGUiOlsic2NvcmUiXSwiY29udmVydCI6IjEifX19",
+            "encoding": "base64"
+          },
+          "redirectURL": null,
+          "headersSize": 427,
+          "bodySize": 297
+        },
+        "serverIPAddress": "120.77.37.130",
+        "cache": {},
+        "timings": {
+          "dns": -1,
+          "connect": -1,
+          "ssl": -1,
+          "send": 0,
+          "wait": 89,
+          "receive": 0
+        }
+      },
+      {
+        "startedDateTime": "2023-10-02T15:43:34.700+08:00",
+        "time": 94,
+        "request": {
+          "method": "POST",
+          "url": "https://aibox.copyppt.com/adminapi/ai_setting/setConfig",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [
+            {
+              "name": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "thinkphp_show_page_trace",
+              "value": "0|0"
+            }
+          ],
+          "headers": [
+            {
+              "name": ":method",
+              "value": "POST"
+            },
+            {
+              "name": ":authority",
+              "value": "aibox.copyppt.com"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": ":path",
+              "value": "/adminapi/ai_setting/setConfig"
+            },
+            {
+              "name": "content-length",
+              "value": "287"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\""
+            },
+            {
+              "name": "version",
+              "value": "1.6.0"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json;charset=UTF-8"
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "token",
+              "value": "545f3b49c65e1196e2fcb6ac042cadde"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"macOS\""
+            },
+            {
+              "name": "origin",
+              "value": "https://aibox.copyppt.com"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "referer",
+              "value": "https://aibox.copyppt.com/admin/imageCartoon/cartoonConfig"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,zh-TW;q=0.8,en;q=0.7,und;q=0.6,ja;q=0.5,da;q=0.4"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "thinkphp_show_page_trace=0|0"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "application/json;charset=UTF-8",
+            "text": "{\"aliyun_access_key\":\"LTAI5tF3uhvQoCdnW2qRjz9R\",\"aliyun_secret_key\":\"ryjAIK3RPCDc7ndAnW2jIlzwPW4HWD\",\"terminal\":[\"7\",\"1\",\"2\"],\"mp_tiktok\":{\"convert\":\"1\",\"mode\":[\"score\"]},\"mp_wechat\":{\"convert\":\"1\",\"mode\":[\"score\"]},\"oa_weixin\":{\"mode\":[\"score\"],\"convert\":\"1\"},\"type\":\"image_to_cartoon\"}"
+          },
+          "headersSize": 24,
+          "bodySize": 287
+        },
+        "response": {
+          "_charlesStatus": "COMPLETE",
+          "status": 200,
+          "statusText": null,
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":status",
+              "value": "200"
+            },
+            {
+              "name": "server",
+              "value": "nginx"
+            },
+            {
+              "name": "date",
+              "value": "Mon, 02 Oct 2023 07:43:34 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "access-control-allow-headers",
+              "value": "Authorization, Sec-Fetch-Mode, DNT, X-Mx-ReqToken, Keep-Alive, User-Agent, If-Match, If-None-Match, If-Unmodified-Since, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type, Accept-Language, Origin, Accept-Encoding,Access-Token,token,version"
+            },
+            {
+              "name": "access-control-allow-methods",
+              "value": "GET, POST, PATCH, PUT, DELETE, post"
+            },
+            {
+              "name": "access-control-max-age",
+              "value": "1728000"
+            },
+            {
+              "name": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=31536000"
+            }
+          ],
+          "content": {
+            "size": 50,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "eyJjb2RlIjoxLCJzaG93IjoxLCJtc2ciOiLorr7nva7miJDlip8iLCJkYXRhIjpbXX0=",
+            "encoding": "base64"
+          },
+          "redirectURL": null,
+          "headersSize": 427,
+          "bodySize": 50
+        },
+        "serverIPAddress": "120.77.37.130",
+        "cache": {},
+        "timings": {
+          "dns": -1,
+          "connect": -1,
+          "ssl": -1,
+          "send": 0,
+          "wait": 94,
+          "receive": 0
+        }
+      },
+      {
+        "startedDateTime": "2023-10-02T15:43:34.801+08:00",
+        "time": 87,
+        "request": {
+          "method": "GET",
+          "url": "https://aibox.copyppt.com/adminapi/ai_setting/getConfig?type=image_to_cartoon",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [
+            {
+              "name": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "thinkphp_show_page_trace",
+              "value": "0|0"
+            }
+          ],
+          "headers": [
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":authority",
+              "value": "aibox.copyppt.com"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": ":path",
+              "value": "/adminapi/ai_setting/getConfig?type=image_to_cartoon"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\""
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "version",
+              "value": "1.6.0"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "token",
+              "value": "545f3b49c65e1196e2fcb6ac042cadde"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"macOS\""
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "referer",
+              "value": "https://aibox.copyppt.com/admin/imageCartoon/cartoonConfig"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,zh-TW;q=0.8,en;q=0.7,und;q=0.6,ja;q=0.5,da;q=0.4"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "thinkphp_show_page_trace=0|0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "type",
+              "value": "image_to_cartoon"
+            }
+          ],
+          "headersSize": 21,
+          "bodySize": 0
+        },
+        "response": {
+          "_charlesStatus": "COMPLETE",
+          "status": 200,
+          "statusText": null,
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":status",
+              "value": "200"
+            },
+            {
+              "name": "server",
+              "value": "nginx"
+            },
+            {
+              "name": "date",
+              "value": "Mon, 02 Oct 2023 07:43:35 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "access-control-allow-headers",
+              "value": "Authorization, Sec-Fetch-Mode, DNT, X-Mx-ReqToken, Keep-Alive, User-Agent, If-Match, If-None-Match, If-Unmodified-Since, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type, Accept-Language, Origin, Accept-Encoding,Access-Token,token,version"
+            },
+            {
+              "name": "access-control-allow-methods",
+              "value": "GET, POST, PATCH, PUT, DELETE, post"
+            },
+            {
+              "name": "access-control-max-age",
+              "value": "1728000"
+            },
+            {
+              "name": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=31536000"
+            }
+          ],
+          "content": {
+            "size": 297,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "eyJjb2RlIjoxLCJzaG93IjowLCJtc2ciOiIiLCJkYXRhIjp7InRlcm1pbmFsIjpbIjciLCIxIiwiMiJdLCJhbGl5dW5fYWNjZXNzX2tleSI6IkxUQUk1dEYzdWh2UW9DZG5XMnFSano5UiIsImFsaXl1bl9zZWNyZXRfa2V5IjoicnlqQUlLM1JQQ0RjN25kQW5XMmpJbHp3UFc0SFdEIiwibXBfdGlrdG9rIjp7ImNvbnZlcnQiOiIxIiwibW9kZSI6WyJzY29yZSJdfSwibXBfd2VjaGF0Ijp7ImNvbnZlcnQiOiIxIiwibW9kZSI6WyJzY29yZSJdfSwib2Ffd2VpeGluIjp7Im1vZGUiOlsic2NvcmUiXSwiY29udmVydCI6IjEifX19",
+            "encoding": "base64"
+          },
+          "redirectURL": null,
+          "headersSize": 427,
+          "bodySize": 297
+        },
+        "serverIPAddress": "120.77.37.130",
+        "cache": {},
+        "timings": {
+          "dns": -1,
+          "connect": -1,
+          "ssl": -1,
+          "send": 0,
+          "wait": 86,
+          "receive": 1
+        }
+      },
+      {
+        "startedDateTime": "2023-10-02T15:43:42.133+08:00",
+        "time": 91,
+        "request": {
+          "method": "POST",
+          "url": "https://aibox.copyppt.com/adminapi/ai_setting/setConfig",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [
+            {
+              "name": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "thinkphp_show_page_trace",
+              "value": "0|0"
+            }
+          ],
+          "headers": [
+            {
+              "name": ":method",
+              "value": "POST"
+            },
+            {
+              "name": ":authority",
+              "value": "aibox.copyppt.com"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": ":path",
+              "value": "/adminapi/ai_setting/setConfig"
+            },
+            {
+              "name": "content-length",
+              "value": "287"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\""
+            },
+            {
+              "name": "version",
+              "value": "1.6.0"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json;charset=UTF-8"
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "token",
+              "value": "545f3b49c65e1196e2fcb6ac042cadde"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"macOS\""
+            },
+            {
+              "name": "origin",
+              "value": "https://aibox.copyppt.com"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "referer",
+              "value": "https://aibox.copyppt.com/admin/imageCartoon/cartoonConfig"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,zh-TW;q=0.8,en;q=0.7,und;q=0.6,ja;q=0.5,da;q=0.4"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "thinkphp_show_page_trace=0|0"
+            }
+          ],
+          "queryString": [],
+          "postData": {
+            "mimeType": "application/json;charset=UTF-8",
+            "text": "{\"aliyun_access_key\":\"LTAI5tF3uhvQoCdnW2qRjz9R\",\"aliyun_secret_key\":\"ryjAIK3RPCDc7ndAnW2jIlzwPW4HWD\",\"terminal\":[\"7\",\"1\",\"2\"],\"mp_tiktok\":{\"convert\":\"1\",\"mode\":[\"score\"]},\"mp_wechat\":{\"convert\":\"1\",\"mode\":[\"score\"]},\"oa_weixin\":{\"mode\":[\"score\"],\"convert\":\"1\"},\"type\":\"image_to_cartoon\"}"
+          },
+          "headersSize": 24,
+          "bodySize": 287
+        },
+        "response": {
+          "_charlesStatus": "COMPLETE",
+          "status": 200,
+          "statusText": null,
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":status",
+              "value": "200"
+            },
+            {
+              "name": "server",
+              "value": "nginx"
+            },
+            {
+              "name": "date",
+              "value": "Mon, 02 Oct 2023 07:43:42 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "access-control-allow-headers",
+              "value": "Authorization, Sec-Fetch-Mode, DNT, X-Mx-ReqToken, Keep-Alive, User-Agent, If-Match, If-None-Match, If-Unmodified-Since, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type, Accept-Language, Origin, Accept-Encoding,Access-Token,token,version"
+            },
+            {
+              "name": "access-control-allow-methods",
+              "value": "GET, POST, PATCH, PUT, DELETE, post"
+            },
+            {
+              "name": "access-control-max-age",
+              "value": "1728000"
+            },
+            {
+              "name": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=31536000"
+            }
+          ],
+          "content": {
+            "size": 50,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "eyJjb2RlIjoxLCJzaG93IjoxLCJtc2ciOiLorr7nva7miJDlip8iLCJkYXRhIjpbXX0=",
+            "encoding": "base64"
+          },
+          "redirectURL": null,
+          "headersSize": 427,
+          "bodySize": 50
+        },
+        "serverIPAddress": "120.77.37.130",
+        "cache": {},
+        "timings": {
+          "dns": -1,
+          "connect": -1,
+          "ssl": -1,
+          "send": 0,
+          "wait": 91,
+          "receive": 0
+        }
+      },
+      {
+        "startedDateTime": "2023-10-02T15:43:42.232+08:00",
+        "time": 86,
+        "request": {
+          "method": "GET",
+          "url": "https://aibox.copyppt.com/adminapi/ai_setting/getConfig?type=image_to_cartoon",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [
+            {
+              "name": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278",
+              "value": "1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "thinkphp_show_page_trace",
+              "value": "0|0"
+            }
+          ],
+          "headers": [
+            {
+              "name": ":method",
+              "value": "GET"
+            },
+            {
+              "name": ":authority",
+              "value": "aibox.copyppt.com"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": ":path",
+              "value": "/adminapi/ai_setting/getConfig?type=image_to_cartoon"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"117\", \"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"117\""
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "version",
+              "value": "1.6.0"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?0"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "token",
+              "value": "545f3b49c65e1196e2fcb6ac042cadde"
+            },
+            {
+              "name": "sec-ch-ua-platform",
+              "value": "\"macOS\""
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "referer",
+              "value": "https://aibox.copyppt.com/admin/imageCartoon/cartoonConfig"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9,zh-TW;q=0.8,en;q=0.7,und;q=0.6,ja;q=0.5,da;q=0.4"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_5b3666f1816348b80be33c70ed822bf4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_197cd75dd1c9126174aba6b8486c03e4=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "Hm_lvt_cd668c52b64b6c51259bb01b5a1ca278=1693619276,1693928538,1695231527"
+            },
+            {
+              "name": "cookie",
+              "value": "thinkphp_show_page_trace=0|0"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "type",
+              "value": "image_to_cartoon"
+            }
+          ],
+          "headersSize": 21,
+          "bodySize": 0
+        },
+        "response": {
+          "_charlesStatus": "COMPLETE",
+          "status": 200,
+          "statusText": null,
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            {
+              "name": ":status",
+              "value": "200"
+            },
+            {
+              "name": "server",
+              "value": "nginx"
+            },
+            {
+              "name": "date",
+              "value": "Mon, 02 Oct 2023 07:43:42 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "name": "access-control-allow-headers",
+              "value": "Authorization, Sec-Fetch-Mode, DNT, X-Mx-ReqToken, Keep-Alive, User-Agent, If-Match, If-None-Match, If-Unmodified-Since, X-Requested-With, If-Modified-Since, Cache-Control, Content-Type, Accept-Language, Origin, Accept-Encoding,Access-Token,token,version"
+            },
+            {
+              "name": "access-control-allow-methods",
+              "value": "GET, POST, PATCH, PUT, DELETE, post"
+            },
+            {
+              "name": "access-control-max-age",
+              "value": "1728000"
+            },
+            {
+              "name": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "name": "strict-transport-security",
+              "value": "max-age=31536000"
+            }
+          ],
+          "content": {
+            "size": 297,
+            "mimeType": "application/json; charset=utf-8",
+            "text": "eyJjb2RlIjoxLCJzaG93IjowLCJtc2ciOiIiLCJkYXRhIjp7InRlcm1pbmFsIjpbIjciLCIxIiwiMiJdLCJhbGl5dW5fYWNjZXNzX2tleSI6IkxUQUk1dEYzdWh2UW9DZG5XMnFSano5UiIsImFsaXl1bl9zZWNyZXRfa2V5IjoicnlqQUlLM1JQQ0RjN25kQW5XMmpJbHp3UFc0SFdEIiwibXBfdGlrdG9rIjp7ImNvbnZlcnQiOiIxIiwibW9kZSI6WyJzY29yZSJdfSwibXBfd2VjaGF0Ijp7ImNvbnZlcnQiOiIxIiwibW9kZSI6WyJzY29yZSJdfSwib2Ffd2VpeGluIjp7Im1vZGUiOlsic2NvcmUiXSwiY29udmVydCI6IjEifX19",
+            "encoding": "base64"
+          },
+          "redirectURL": null,
+          "headersSize": 427,
+          "bodySize": 297
+        },
+        "serverIPAddress": "120.77.37.130",
+        "cache": {},
+        "timings": {
+          "dns": -1,
+          "connect": -1,
+          "ssl": -1,
+          "send": 0,
+          "wait": 86,
+          "receive": 0
+        }
+      }
+    ]
+  }
+}

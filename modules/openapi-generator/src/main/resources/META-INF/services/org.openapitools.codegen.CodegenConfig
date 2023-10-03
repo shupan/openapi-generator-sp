@@ -93,6 +93,7 @@ org.openapitools.codegen.languages.PhpClientCodegen
 org.openapitools.codegen.languages.PhpNextgenClientCodegen
 org.openapitools.codegen.languages.PhpLaravelServerCodegen
 org.openapitools.codegen.languages.PhpThinkphpServerCodegen
+org.openapitools.codegen.languages.PhpAiboxServerCodegen
 org.openapitools.codegen.languages.PhpLumenServerCodegen
 org.openapitools.codegen.languages.PhpSlim4ServerCodegen
 org.openapitools.codegen.languages.PhpSymfonyServerCodegen

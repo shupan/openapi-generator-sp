@@ -17,6 +17,7 @@
 
 package org.openapitools.codegen.languages;
 
+import io.swagger.v3.oas.models.media.Schema;
 import org.openapitools.codegen.CodegenOperation;
 import org.openapitools.codegen.CodegenProperty;
 import org.openapitools.codegen.CodegenType;
@@ -27,21 +28,22 @@ import org.openapitools.codegen.model.OperationMap;
 import org.openapitools.codegen.model.OperationsMap;
 import org.openapitools.codegen.utils.ModelUtils;
 
-import io.swagger.v3.oas.models.media.Schema;
-
 import java.io.File;
 import java.util.*;
 
 import static org.openapitools.codegen.utils.StringUtils.camelize;
 
-public class PhpLaravelServerCodegen extends AbstractPhpCodegen {
+/**
+ * 正对于aibox框架的代码生成器
+ */
+public class PhpAiboxServerCodegen extends AbstractPhpCodegen {
     protected String apiVersion = "1.0.0";
 
     /**
      * Configures the type of generator.
      *
      * @return the CodegenType for this generator
-     * @see org.openapitools.codegen.CodegenType
+     * @see CodegenType
      */
     public CodegenType getTag() {
         return CodegenType.SERVER;
@@ -54,7 +56,7 @@ public class PhpLaravelServerCodegen extends AbstractPhpCodegen {
      * @return the friendly name for the generator
      */
     public String getName() {
-        return "php-laravel";
+        return "php-aibox";
     }
 
     /**
@@ -70,7 +72,7 @@ public class PhpLaravelServerCodegen extends AbstractPhpCodegen {
     /**
      * Class constructor
      */
-    public PhpLaravelServerCodegen() {
+    public PhpAiboxServerCodegen() {
         super();
 
         modifyFeatureSet(features -> features
@@ -88,13 +90,13 @@ public class PhpLaravelServerCodegen extends AbstractPhpCodegen {
                 )
         );
 
-        embeddedTemplateDir = templateDir = "php-laravel";
+        embeddedTemplateDir = templateDir = "php-aibox";
         variableNamingConvention = "camelCase";
 
         /*
          * packPath
          */
-        invokerPackage = "php-laravel";
+        invokerPackage = "php-aibox";
         outputFolder = srcBasePath;
 
         /*
@@ -178,59 +180,6 @@ public class PhpLaravelServerCodegen extends AbstractPhpCodegen {
         supportingFiles.add(new SupportingFile("app/Providers/RouteServiceProvider.php", outputFolder + File.separator + "app" + File.separator + "Providers", "RouteServiceProvider.php"));
         // /app/
         supportingFiles.add(new SupportingFile("app/User.php", outputFolder + File.separator + "app", "RouteServiceProvider.php"));
-
-        // /database/
-        supportingFiles.add(new SupportingFile("database/factories/UserFactory.php", outputFolder + File.separator + "database" + File.separator + "factories", "UserFactory.php"));
-        supportingFiles.add(new SupportingFile("database/migrations/2014_10_12_000000_create_users_table.php", outputFolder + File.separator + "database" + File.separator + "migrations", "2014_10_12_000000_create_users_table.php"));
-        supportingFiles.add(new SupportingFile("database/migrations/2019_08_19_000000_create_failed_jobs_table.php", outputFolder + File.separator + "database" + File.separator + "migrations", "2019_08_19_000000_create_failed_jobs_table.php"));
-        supportingFiles.add(new SupportingFile("database/seeds/DatabaseSeeder.php", outputFolder + File.separator + "database" + File.separator + "seeds", "DatabaseSeeder.php"));
-        supportingFiles.add(new SupportingFile("database/gitignore", outputFolder + File.separator + "database", ".gitignore"));
-
-        // /config/
-        supportingFiles.add(new SupportingFile("config/app.php", outputFolder + File.separator + "config", "app.php"));
-        supportingFiles.add(new SupportingFile("config/auth.php", outputFolder + File.separator + "config", "auth.php"));
-        supportingFiles.add(new SupportingFile("config/broadcasting.php", outputFolder + File.separator + "config", "broadcasting.php"));
-        supportingFiles.add(new SupportingFile("config/cache.php", outputFolder + File.separator + "config", "cache.php"));
-        supportingFiles.add(new SupportingFile("config/cors.php", outputFolder + File.separator + "config", "cors.php"));
-        supportingFiles.add(new SupportingFile("config/database.php", outputFolder + File.separator + "config", "database.php"));
-        supportingFiles.add(new SupportingFile("config/filesystems.php", outputFolder + File.separator + "config", "filesystems.php"));
-        supportingFiles.add(new SupportingFile("config/hashing.php", outputFolder + File.separator + "config", "hashing.php"));
-        supportingFiles.add(new SupportingFile("config/logging.php", outputFolder + File.separator + "config", "logging.php"));
-        supportingFiles.add(new SupportingFile("config/mail.php", outputFolder + File.separator + "config", "mail.php"));
-        supportingFiles.add(new SupportingFile("config/queue.php", outputFolder + File.separator + "config", "queue.php"));
-        supportingFiles.add(new SupportingFile("config/services.php", outputFolder + File.separator + "config", "services.php"));
-        supportingFiles.add(new SupportingFile("config/session.php", outputFolder + File.separator + "config", "session.php"));
-        supportingFiles.add(new SupportingFile("config/view.php", outputFolder + File.separator + "config", "view.php"));
-
-        // /database/
-        supportingFiles.add(new SupportingFile("database/migrations/2019_08_19_000000_create_failed_jobs_table.php", outputFolder + File.separator + "database" + File.separator + "migrations", "2019_08_19_000000_create_failed_jobs_table.php"));
-
-        // /resources/
-        supportingFiles.add(new SupportingFile("resources/js/app.js", outputFolder + File.separator + "resources" + File.separator + "assets" + File.separator + "js", "app.js"));
-        supportingFiles.add(new SupportingFile("resources/js/bootstrap.js", outputFolder + File.separator + "resources" + File.separator + "assets" + File.separator + "js", "bootstrap.js"));
-        supportingFiles.add(new SupportingFile("resources/sass/app.scss", outputFolder + File.separator + "resources" + File.separator + "assets" + File.separator + "sass", "app.scss"));
-        supportingFiles.add(new SupportingFile("resources/lang/en/auth.php", outputFolder + File.separator + "resources" + File.separator + "lang" + File.separator + "en", "auth.php"));
-        supportingFiles.add(new SupportingFile("resources/lang/en/pagination.php", outputFolder + File.separator + "resources" + File.separator + "lang" + File.separator + "en", "pagination.php"));
-        supportingFiles.add(new SupportingFile("resources/lang/en/passwords.php", outputFolder + File.separator + "resources" + File.separator + "lang" + File.separator + "en", "passwords.php"));
-        supportingFiles.add(new SupportingFile("resources/lang/en/validation.php", outputFolder + File.separator + "resources" + File.separator + "lang" + File.separator + "en", "validation.php"));
-        supportingFiles.add(new SupportingFile("resources/views/welcome.blade.php", outputFolder + File.separator + "resources" + File.separator + "views", "welcome.blade.php"));
-
-        // /storage/
-        supportingFiles.add(new SupportingFile("storage/app/gitignore", outputFolder + File.separator + "storage" + File.separator + "app", ".gitignore"));
-        supportingFiles.add(new SupportingFile("storage/app/public/gitignore", outputFolder + File.separator + "storage" + File.separator + "app" + File.separator + "public", ".gitignore"));
-        supportingFiles.add(new SupportingFile("storage/framework/gitignore", outputFolder + File.separator + "storage" + File.separator + "framework", ".gitignore"));
-        supportingFiles.add(new SupportingFile("storage/framework/cache/gitignore", outputFolder + File.separator + "storage" + File.separator + "framework" + File.separator + "cache", ".gitignore"));
-        supportingFiles.add(new SupportingFile("storage/framework/cache/data/gitignore", outputFolder + File.separator + "storage" + File.separator + "framework" + File.separator + "cache", ".gitignore"));
-        supportingFiles.add(new SupportingFile("storage/framework/sessions/gitignore", outputFolder + File.separator + "storage" + File.separator + "framework" + File.separator + "sessions", ".gitignore"));
-        supportingFiles.add(new SupportingFile("storage/framework/testing/gitignore", outputFolder + File.separator + "storage" + File.separator + "framework" + File.separator + "testing", ".gitignore"));
-        supportingFiles.add(new SupportingFile("storage/framework/views/gitignore", outputFolder + File.separator + "storage" + File.separator + "framework" + File.separator + "views", ".gitignore"));
-        supportingFiles.add(new SupportingFile("storage/logs/gitignore", outputFolder + File.separator + "storage" + File.separator + "logs", ".gitignore"));
-
-        // /tests/
-        supportingFiles.add(new SupportingFile("tests/Feature/ExampleTest.php", outputFolder + File.separator + "tests" + File.separator + "Feature", "ExampleTest.php"));
-        supportingFiles.add(new SupportingFile("tests/Unit/ExampleTest.php", outputFolder + File.separator + "tests" + File.separator + "Unit", "ExampleTest.php"));
-        supportingFiles.add(new SupportingFile("tests/CreatesApplication.php", outputFolder + File.separator + "tests", "CreatesApplication.php"));
-        supportingFiles.add(new SupportingFile("tests/TestCase.php", outputFolder + File.separator + "tests", "TestCase.php"));
     }
 
     @Override
@@ -320,7 +269,6 @@ public class PhpLaravelServerCodegen extends AbstractPhpCodegen {
             property.defaultValue = this.toDefaultValue(referencedSchema);
             List<Object> _enum = referencedSchema.getEnum();
 
-            // @sp 设置允许的变量的属性值
             Map<String, Object> allowableValues = new HashMap<>();
             allowableValues.put("values", _enum);
             if (allowableValues.size() > 0) {

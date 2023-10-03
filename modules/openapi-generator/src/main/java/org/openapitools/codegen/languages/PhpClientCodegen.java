@@ -110,6 +110,14 @@ public class PhpClientCodegen extends AbstractPhpCodegen {
         return "Generates a PHP client library.";
     }
 
+    /**
+     * 这段代码是一个方法，它用于配置生成器的选项和支持文件。【生成配置文件】
+     * 1. 首先，调用父类的processOpts方法，以处理通用的选项配置。
+     * 2. 添加一系列支持文件到supportingFiles列表中，每个支持文件都包括模板文件、目标路径和目标文件名。
+     * 3. 如果additionalProperties中包含CodegenConstants.LIBRARY键，则将其值设置为生成器的库属性。
+     * 4. 如果库属性为PSR18，则添加一个名为"DebugPlugin.mustache"的支持文件到supportingFiles列表中。
+     * 这段代码的作用是根据配置添加支持文件，这些文件将在代码生成过程中被复制到指定的目标路径，并用于生成目标代码文件。支持文件通常包括模板文件、配置文件、文档文件等。
+     */
     @Override
     public void processOpts() {
         super.processOpts();
