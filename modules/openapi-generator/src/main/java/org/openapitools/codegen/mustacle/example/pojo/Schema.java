@@ -245,7 +245,6 @@ public class Schema{
 	@JSONField(name="exampleSetFlag")
 	private boolean exampleSetFlag;
 
-
 	@JSONField(name="defaultValue")
 	private String defaultValue;
 
@@ -918,7 +917,6 @@ public class Schema{
 	public boolean isExampleSetFlag(){
 		return exampleSetFlag;
 	}
-
 
 	public void setDefaultValue(String defaultValue){
 		this.defaultValue = defaultValue;

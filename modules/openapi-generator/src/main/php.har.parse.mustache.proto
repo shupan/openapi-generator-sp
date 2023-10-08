@@ -1,0 +1,93 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/any.proto";
+
+message SomeMessage {
+
+      message Creator {
+            string name = 1;
+            string version = 2;
+      }
+
+      message Cookies {
+            string name = 1;
+            string value = 2;
+      }
+
+      message Headers {
+            string name = 1;
+            string value = 2;
+      }
+
+      message Querystring {
+            string name = 1;
+            string value = 2;
+      }
+
+      message Request {
+            string method = 1;
+            string url = 2;
+            string httpVersion = 3;
+            repeated Cookies cookies = 4;
+            repeated Headers headers = 5;
+            repeated Querystring queryString = 6;
+            uint32 headersSize = 7;
+            uint32 bodySize = 8;
+      }
+
+      message Headers1 {
+            string name = 1;
+            string value = 2;
+      }
+
+      message Content {
+            uint32 size = 1;
+            string mimeType = 2;
+            string text = 3;
+            string encoding = 4;
+      }
+
+      message Response {
+            string _charlesStatus = 1;
+            uint32 status = 2;
+            google.protobuf.Any statusText = 3;
+            string httpVersion = 4;
+            repeated google.protobuf.Any cookies = 5;
+            repeated Headers1 headers = 6;
+            Content content = 7;
+            google.protobuf.Any redirectURL = 8;
+            uint32 headersSize = 9;
+            uint32 bodySize = 10;
+      }
+
+      message Cache {
+      }
+
+      message Timings {
+            int32 dns = 1;
+            int32 connect = 2;
+            int32 ssl = 3;
+            uint32 send = 4;
+            uint32 wait = 5;
+            uint32 receive = 6;
+      }
+
+      message Entries {
+            google.protobuf.Timestamp startedDateTime = 1;
+            uint32 time = 2;
+            Request request = 3;
+            Response response = 4;
+            string serverIPAddress = 5;
+            Cache cache = 6;
+            Timings timings = 7;
+      }
+
+      message Log {
+            string version = 1;
+            Creator creator = 2;
+            repeated Entries entries = 3;
+      }
+
+      Log log = 1;
+}

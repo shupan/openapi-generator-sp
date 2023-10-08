@@ -1,0 +1,309 @@
+syntax = "proto3";
+
+import "google/protobuf/any.proto";
+
+message SomeMessage {
+  
+  string modelSrcPath = 1;
+  string appVersion = 2;
+  string generatorClass = 3;
+  bool sortParamsByRequiredFlag = 4;
+  string operationTagDescription = 5;
+  string invokerPackage = 6;
+  string classVarName = 7;
+  bool generateModelDocs = 8;
+  bool hasImport = 9;
+  bool generateModelTests = 10;
+  bool strictSpecBehavior = 11;
+  bool generateApiTests = 12;
+  string classFilename = 13;
+  Lambda lambda = 14;
+  bool generateModels = 15;
+  string apiVersion = 16;
+  string inputSpec = 17;
+  string artifactUrl = 18;
+  string developerOrganization = 19;
+  string baseName = 20;
+  string package = 21;
+  repeated Imports imports = 22;
+  string contextPath = 23;
+  string appDescription = 24;
+  string licenseName = 25;
+  string interfaceNamePrefix = 26;
+  string version = 27;
+  string releaseNote = 28;
+  License license = 29;
+  string modelDocPath = 30;
+  string escapedInvokerPackage = 31;
+  string abstractNameSuffix = 32;
+  string srcBasePath = 33;
+  string testBasePath = 34;
+  string importPath = 35;
+  string generatedYear = 36;
+  string modelPackage = 37;
+  string abstractNamePrefix = 38;
+  string gitHost = 39;
+  string apiSrcPath = 40;
+  string apiTestPath = 41;
+  string apiDocPath = 42;
+  string licenseInfo = 43;
+  bool hasModel = 44;
+  bool generateApis = 45;
+  string basePathWithoutHost = 46;
+  string primitives = 47;
+  string developerOrganizationUrl = 48;
+  Operations operations = 49;
+  string interfaceNameSuffix = 50;
+  string packageName = 51;
+  bool hideGenerationTimestamp = 52;
+  string modelTestPath = 53;
+  string unescapedAppDescription = 54;
+  string appName = 55;
+  bool generateApiDocs = 56;
+  string generatorVersion = 57;
+  string traitNameSuffix = 58;
+  string apiPackage = 59;
+  string basePath = 60;
+  string classname = 61;
+  string gitRepoId = 62;
+  string generatedDate = 63;
+  string traitNamePrefix = 64;
+  string appDescriptionWithNewLines = 65;
+  string gitUserId = 66;
+
+
+  message Imports {
+    string import = 1;
+    string classname = 2;
+  }
+
+  message License {
+    string name = 1;
+  }
+
+  message Produces {
+    string isJson = 1;
+    string mediaType = 2;
+  }
+
+  message Vendorextensions {
+  }
+
+  message Responses {
+    bool additionalPropertiesIsAnyType = 1;
+    string code = 2;
+    bool exclusiveMaximum = 3;
+    bool exclusiveMinimum = 4;
+    bool hasDiscriminatorWithNonEmptyMapping = 5;
+    bool hasHeaders = 6;
+    bool hasMultipleTypes = 7;
+    bool hasRequired = 8;
+    bool hasValidation = 9;
+    bool hasVars = 10;
+    repeated google.protobuf.Any headers = 11;
+    bool is1xx = 12;
+    bool is2xx = 13;
+    bool is3xx = 14;
+    bool is4xx = 15;
+    bool is5xx = 16;
+    bool isAnyType = 17;
+    bool isArray = 18;
+    bool isBinary = 19;
+    bool isBoolean = 20;
+    bool isBooleanSchemaFalse = 21;
+    bool isBooleanSchemaTrue = 22;
+    bool isByteArray = 23;
+    bool isDate = 24;
+    bool isDateTime = 25;
+    bool isDecimal = 26;
+    bool isDefault = 27;
+    bool isDouble = 28;
+    bool isEmail = 29;
+    bool isEnum = 30;
+    bool isFile = 31;
+    bool isFloat = 32;
+    bool isFreeFormObject = 33;
+    bool isInteger = 34;
+    bool isLong = 35;
+    bool isMap = 36;
+    bool isModel = 37;
+    bool isNull = 38;
+    bool isNumber = 39;
+    bool isNumeric = 40;
+    bool isPassword = 41;
+    bool isPrimitiveType = 42;
+    bool isShort = 43;
+    bool isString = 44;
+    bool isUnboundedInteger = 45;
+    bool isUuid = 46;
+    bool isVoid = 47;
+    string jsonSchema = 48;
+    string message = 49;
+    bool primitiveType = 50;
+    bool range = 51;
+    repeated google.protobuf.Any requiredVars = 52;
+    repeated google.protobuf.Any responseHeaders = 53;
+    bool schemaIsFromAdditionalProperties = 54;
+    bool simpleType = 55;
+    bool uniqueItems = 56;
+    repeated google.protobuf.Any vars = 57;
+    Vendorextensions vendorExtensions = 58;
+    bool wildcard = 59;
+  }
+
+  message Tags {
+    string name = 1;
+  }
+
+  message Vendorextensions1 {
+  }
+
+  message Operation {
+    repeated google.protobuf.Any allParams = 1;
+    bool allResponsesAreErrors = 2;
+    string baseName = 3;
+    bool bodyAllowed = 4;
+    repeated google.protobuf.Any bodyParams = 5;
+    repeated google.protobuf.Any callbacks = 6;
+    repeated google.protobuf.Any constantParams = 7;
+    repeated google.protobuf.Any cookieParams = 8;
+    bool defaultReturnType = 9;
+    repeated google.protobuf.Any formParams = 10;
+    bool hasAuthMethods = 11;
+    bool hasBodyOrFormParams = 12;
+    bool hasBodyParam = 13;
+    bool hasConstantParams = 14;
+    bool hasConsumes = 15;
+    bool hasCookieParams = 16;
+    bool hasDefaultResponse = 17;
+    bool hasErrorResponseObject = 18;
+    bool hasExamples = 19;
+    bool hasFormParams = 20;
+    bool hasHeaderParams = 21;
+    bool hasNotNullableParams = 22;
+    bool hasOptionalParams = 23;
+    bool hasParams = 24;
+    bool hasPathParams = 25;
+    bool hasProduces = 26;
+    bool hasQueryParams = 27;
+    bool hasQueryParamsOrAuth = 28;
+    bool hasReference = 29;
+    bool hasRequiredAndNotNullableParams = 30;
+    bool hasRequiredParams = 31;
+    bool hasResponseHeaders = 32;
+    bool hasVendorExtensions = 33;
+    bool hasVersionHeaders = 34;
+    bool hasVersionQueryParams = 35;
+    repeated google.protobuf.Any headerParams = 36;
+    string httpMethod = 37;
+    repeated google.protobuf.Any implicitHeadersParams = 38;
+    repeated string imports = 39;
+    bool isArray = 40;
+    bool isCallbackRequest = 41;
+    bool isDeprecated = 42;
+    bool isMap = 43;
+    bool isMultipart = 44;
+    bool isResponseBinary = 45;
+    bool isResponseFile = 46;
+    bool isResponseOptional = 47;
+    bool isRestful = 48;
+    bool isRestfulCreate = 49;
+    bool isRestfulDestroy = 50;
+    bool isRestfulIndex = 51;
+    bool isRestfulShow = 52;
+    bool isRestfulUpdate = 53;
+    bool isVoid = 54;
+    string nickname = 55;
+    repeated google.protobuf.Any notNullableParams = 56;
+    string operationId = 57;
+    string operationIdCamelCase = 58;
+    string operationIdLowerCase = 59;
+    string operationIdOriginal = 60;
+    string operationIdSnakeCase = 61;
+    repeated google.protobuf.Any optionalParams = 62;
+    string path = 63;
+    repeated google.protobuf.Any pathParams = 64;
+    repeated Produces produces = 65;
+    repeated google.protobuf.Any queryParams = 66;
+    repeated google.protobuf.Any requiredAndNotNullableParams = 67;
+    repeated google.protobuf.Any requiredParams = 68;
+    repeated google.protobuf.Any responseHeaders = 69;
+    repeated Responses responses = 70;
+    bool restful = 71;
+    bool restfulCreate = 72;
+    bool restfulDestroy = 73;
+    bool restfulIndex = 74;
+    bool restfulShow = 75;
+    bool restfulUpdate = 76;
+    bool returnSimpleType = 77;
+    bool returnTypeIsPrimitive = 78;
+    repeated google.protobuf.Any servers = 79;
+    bool subresourceOperation = 80;
+    string summary = 81;
+    repeated Tags tags = 82;
+    bool uniqueItems = 83;
+    Vendorextensions1 vendorExtensions = 84;
+  }
+
+  message Operations {
+    string classname = 1;
+    repeated Operation operation = 2;
+    string pathPrefix = 3;
+  }
+
+
+  message Lowercase {
+  }
+
+  message Uppercase {
+  }
+
+  message Snakecase {
+  }
+
+  message Titlecase {
+  }
+
+  message Camelcase {
+  }
+
+  message Pascalcase {
+  }
+
+  message Forwardslash {
+  }
+
+  message Backslash {
+  }
+
+  message Doublequote {
+  }
+
+  message Indented {
+  }
+
+  message Indented_8 {
+  }
+
+  message Indented_12 {
+  }
+
+  message Indented_16 {
+  }
+
+  message Lambda {
+    Lowercase lowercase = 1;
+    Uppercase uppercase = 2;
+    Snakecase snakecase = 3;
+    Titlecase titlecase = 4;
+    Camelcase camelcase = 5;
+    Pascalcase pascalcase = 6;
+    Forwardslash forwardslash = 7;
+    Backslash backslash = 8;
+    Doublequote doublequote = 9;
+    Indented indented = 10;
+    Indented_8 indented_8 = 11;
+    Indented_12 indented_12 = 12;
+    Indented_16 indented_16 = 13;
+  }
+}

@@ -1,0 +1,1690 @@
+syntax = "proto3";
+
+import "google/protobuf/any.proto";
+import "google/protobuf/timestamp.proto";
+
+message SomeMessage {
+      message Allvars {
+            bool IExclusiveMaximum = 1;
+            bool additionalPropertiesIsAnyType = 2;
+            string baseName = 3;
+            string baseType = 4;
+            string dataFormat = 5;
+            string dataType = 6;
+            string datatype = 7;
+            string datatypeWithEnum = 8;
+            string defaultValue = 9;
+            string defaultValueWithParam = 10;
+            bool deprecated = 11;
+            string example = 12;
+            bool exclusiveMaximum = 13;
+            bool exclusiveMinimum = 14;
+            string format = 15;
+            string getter = 16;
+            bool hasDiscriminatorWithNonEmptyMapping = 17;
+            bool hasItems = 18;
+            bool hasMoreNonReadOnly = 19;
+            bool hasMultipleTypes = 20;
+            bool hasRequired = 21;
+            bool hasValidation = 22;
+            bool hasVars = 23;
+            bool isAnyType = 24;
+            bool isArray = 25;
+            bool isBinary = 26;
+            bool isBoolean = 27;
+            bool isBooleanSchemaFalse = 28;
+            bool isBooleanSchemaTrue = 29;
+            bool isByteArray = 30;
+            bool isCircularReference = 31;
+            bool isContainer = 32;
+            bool isDate = 33;
+            bool isDateTime = 34;
+            bool isDecimal = 35;
+            bool isDiscriminator = 36;
+            bool isDouble = 37;
+            bool isEmail = 38;
+            bool isEnum = 39;
+            bool isEnumOrRef = 40;
+            bool isEnumRef = 41;
+            bool isFile = 42;
+            bool isFloat = 43;
+            bool isFreeFormObject = 44;
+            bool isInherited = 45;
+            bool isInnerEnum = 46;
+            bool isInteger = 47;
+            bool isLong = 48;
+            bool isMap = 49;
+            bool isModel = 50;
+            bool isNew = 51;
+            bool isNull = 52;
+            bool isNullable = 53;
+            bool isNumber = 54;
+            bool isNumeric = 55;
+            bool isPassword = 56;
+            bool isPrimitiveType = 57;
+            bool isReadOnly = 58;
+            bool isSelfReference = 59;
+            bool isShort = 60;
+            bool isString = 61;
+            bool isUnboundedInteger = 62;
+            bool isUri = 63;
+            bool isUuid = 64;
+            bool isVoid = 65;
+            bool isWriteOnly = 66;
+            bool isXmlAttribute = 67;
+            bool isXmlWrapped = 68;
+            string jsonSchema = 69;
+            string name = 70;
+            string nameInCamelCase = 71;
+            string nameInSnakeCase = 72;
+            string openApiType = 73;
+            bool required = 74;
+            repeated google.protobuf.Any requiredVars = 75;
+            bool schemaIsFromAdditionalProperties = 76;
+            string setter = 77;
+            bool uniqueItems = 78;
+            repeated google.protobuf.Any vars = 79;
+            Vendorextensions vendorExtensions = 80;
+      }
+
+      message Vendorextensions1 {
+      }
+
+      message Nonnullablevars {
+            bool IExclusiveMaximum = 1;
+            bool additionalPropertiesIsAnyType = 2;
+            string baseName = 3;
+            string baseType = 4;
+            string dataFormat = 5;
+            string dataType = 6;
+            string datatype = 7;
+            string datatypeWithEnum = 8;
+            string defaultValue = 9;
+            string defaultValueWithParam = 10;
+            bool deprecated = 11;
+            string example = 12;
+            bool exclusiveMaximum = 13;
+            bool exclusiveMinimum = 14;
+            string format = 15;
+            string getter = 16;
+            bool hasDiscriminatorWithNonEmptyMapping = 17;
+            bool hasItems = 18;
+            bool hasMoreNonReadOnly = 19;
+            bool hasMultipleTypes = 20;
+            bool hasRequired = 21;
+            bool hasValidation = 22;
+            bool hasVars = 23;
+            bool isAnyType = 24;
+            bool isArray = 25;
+            bool isBinary = 26;
+            bool isBoolean = 27;
+            bool isBooleanSchemaFalse = 28;
+            bool isBooleanSchemaTrue = 29;
+            bool isByteArray = 30;
+            bool isCircularReference = 31;
+            bool isContainer = 32;
+            bool isDate = 33;
+            bool isDateTime = 34;
+            bool isDecimal = 35;
+            bool isDiscriminator = 36;
+            bool isDouble = 37;
+            bool isEmail = 38;
+            bool isEnum = 39;
+            bool isEnumOrRef = 40;
+            bool isEnumRef = 41;
+            bool isFile = 42;
+            bool isFloat = 43;
+            bool isFreeFormObject = 44;
+            bool isInherited = 45;
+            bool isInnerEnum = 46;
+            bool isInteger = 47;
+            bool isLong = 48;
+            bool isMap = 49;
+            bool isModel = 50;
+            bool isNew = 51;
+            bool isNull = 52;
+            bool isNullable = 53;
+            bool isNumber = 54;
+            bool isNumeric = 55;
+            bool isPassword = 56;
+            bool isPrimitiveType = 57;
+            bool isReadOnly = 58;
+            bool isSelfReference = 59;
+            bool isShort = 60;
+            bool isString = 61;
+            bool isUnboundedInteger = 62;
+            bool isUri = 63;
+            bool isUuid = 64;
+            bool isVoid = 65;
+            bool isWriteOnly = 66;
+            bool isXmlAttribute = 67;
+            bool isXmlWrapped = 68;
+            string jsonSchema = 69;
+            string name = 70;
+            string nameInCamelCase = 71;
+            string nameInSnakeCase = 72;
+            string openApiType = 73;
+            bool required = 74;
+            repeated google.protobuf.Any requiredVars = 75;
+            bool schemaIsFromAdditionalProperties = 76;
+            string setter = 77;
+            bool uniqueItems = 78;
+            repeated google.protobuf.Any vars = 79;
+            Vendorextensions1 vendorExtensions = 80;
+      }
+
+      message Vendorextensions2 {
+      }
+
+      message Readwritevars {
+            bool IExclusiveMaximum = 1;
+            bool additionalPropertiesIsAnyType = 2;
+            string baseName = 3;
+            string baseType = 4;
+            string dataFormat = 5;
+            string dataType = 6;
+            string datatype = 7;
+            string datatypeWithEnum = 8;
+            string defaultValue = 9;
+            string defaultValueWithParam = 10;
+            bool deprecated = 11;
+            string example = 12;
+            bool exclusiveMaximum = 13;
+            bool exclusiveMinimum = 14;
+            string format = 15;
+            string getter = 16;
+            bool hasDiscriminatorWithNonEmptyMapping = 17;
+            bool hasItems = 18;
+            bool hasMoreNonReadOnly = 19;
+            bool hasMultipleTypes = 20;
+            bool hasRequired = 21;
+            bool hasValidation = 22;
+            bool hasVars = 23;
+            bool isAnyType = 24;
+            bool isArray = 25;
+            bool isBinary = 26;
+            bool isBoolean = 27;
+            bool isBooleanSchemaFalse = 28;
+            bool isBooleanSchemaTrue = 29;
+            bool isByteArray = 30;
+            bool isCircularReference = 31;
+            bool isContainer = 32;
+            bool isDate = 33;
+            bool isDateTime = 34;
+            bool isDecimal = 35;
+            bool isDiscriminator = 36;
+            bool isDouble = 37;
+            bool isEmail = 38;
+            bool isEnum = 39;
+            bool isEnumOrRef = 40;
+            bool isEnumRef = 41;
+            bool isFile = 42;
+            bool isFloat = 43;
+            bool isFreeFormObject = 44;
+            bool isInherited = 45;
+            bool isInnerEnum = 46;
+            bool isInteger = 47;
+            bool isLong = 48;
+            bool isMap = 49;
+            bool isModel = 50;
+            bool isNew = 51;
+            bool isNull = 52;
+            bool isNullable = 53;
+            bool isNumber = 54;
+            bool isNumeric = 55;
+            bool isPassword = 56;
+            bool isPrimitiveType = 57;
+            bool isReadOnly = 58;
+            bool isSelfReference = 59;
+            bool isShort = 60;
+            bool isString = 61;
+            bool isUnboundedInteger = 62;
+            bool isUri = 63;
+            bool isUuid = 64;
+            bool isVoid = 65;
+            bool isWriteOnly = 66;
+            bool isXmlAttribute = 67;
+            bool isXmlWrapped = 68;
+            string jsonSchema = 69;
+            string name = 70;
+            string nameInCamelCase = 71;
+            string nameInSnakeCase = 72;
+            string openApiType = 73;
+            bool required = 74;
+            repeated google.protobuf.Any requiredVars = 75;
+            bool schemaIsFromAdditionalProperties = 76;
+            string setter = 77;
+            bool uniqueItems = 78;
+            repeated google.protobuf.Any vars = 79;
+            Vendorextensions2 vendorExtensions = 80;
+      }
+
+      message Vendorextensions3 {
+      }
+
+      message Requiredvars {
+            bool IExclusiveMaximum = 1;
+            bool additionalPropertiesIsAnyType = 2;
+            string baseName = 3;
+            string baseType = 4;
+            string dataFormat = 5;
+            string dataType = 6;
+            string datatype = 7;
+            string datatypeWithEnum = 8;
+            string defaultValue = 9;
+            string defaultValueWithParam = 10;
+            bool deprecated = 11;
+            string example = 12;
+            bool exclusiveMaximum = 13;
+            bool exclusiveMinimum = 14;
+            string format = 15;
+            string getter = 16;
+            bool hasDiscriminatorWithNonEmptyMapping = 17;
+            bool hasItems = 18;
+            bool hasMoreNonReadOnly = 19;
+            bool hasMultipleTypes = 20;
+            bool hasRequired = 21;
+            bool hasValidation = 22;
+            bool hasVars = 23;
+            bool isAnyType = 24;
+            bool isArray = 25;
+            bool isBinary = 26;
+            bool isBoolean = 27;
+            bool isBooleanSchemaFalse = 28;
+            bool isBooleanSchemaTrue = 29;
+            bool isByteArray = 30;
+            bool isCircularReference = 31;
+            bool isContainer = 32;
+            bool isDate = 33;
+            bool isDateTime = 34;
+            bool isDecimal = 35;
+            bool isDiscriminator = 36;
+            bool isDouble = 37;
+            bool isEmail = 38;
+            bool isEnum = 39;
+            bool isEnumOrRef = 40;
+            bool isEnumRef = 41;
+            bool isFile = 42;
+            bool isFloat = 43;
+            bool isFreeFormObject = 44;
+            bool isInherited = 45;
+            bool isInnerEnum = 46;
+            bool isInteger = 47;
+            bool isLong = 48;
+            bool isMap = 49;
+            bool isModel = 50;
+            bool isNew = 51;
+            bool isNull = 52;
+            bool isNullable = 53;
+            bool isNumber = 54;
+            bool isNumeric = 55;
+            bool isPassword = 56;
+            bool isPrimitiveType = 57;
+            bool isReadOnly = 58;
+            bool isSelfReference = 59;
+            bool isShort = 60;
+            bool isString = 61;
+            bool isUnboundedInteger = 62;
+            bool isUri = 63;
+            bool isUuid = 64;
+            bool isVoid = 65;
+            bool isWriteOnly = 66;
+            bool isXmlAttribute = 67;
+            bool isXmlWrapped = 68;
+            string jsonSchema = 69;
+            string name = 70;
+            string nameInCamelCase = 71;
+            string nameInSnakeCase = 72;
+            string openApiType = 73;
+            bool required = 74;
+            repeated google.protobuf.Any requiredVars = 75;
+            bool schemaIsFromAdditionalProperties = 76;
+            string setter = 77;
+            bool uniqueItems = 78;
+            repeated google.protobuf.Any vars = 79;
+            Vendorextensions3 vendorExtensions = 80;
+      }
+
+      message Vendorextensions4 {
+      }
+
+      message Code {
+            bool IExclusiveMaximum = 1;
+            bool additionalPropertiesIsAnyType = 2;
+            string baseName = 3;
+            string baseType = 4;
+            string dataFormat = 5;
+            string dataType = 6;
+            string datatype = 7;
+            string datatypeWithEnum = 8;
+            string defaultValue = 9;
+            string defaultValueWithParam = 10;
+            bool deprecated = 11;
+            string example = 12;
+            bool exclusiveMaximum = 13;
+            bool exclusiveMinimum = 14;
+            string format = 15;
+            string getter = 16;
+            bool hasDiscriminatorWithNonEmptyMapping = 17;
+            bool hasItems = 18;
+            bool hasMoreNonReadOnly = 19;
+            bool hasMultipleTypes = 20;
+            bool hasRequired = 21;
+            bool hasValidation = 22;
+            bool hasVars = 23;
+            bool isAnyType = 24;
+            bool isArray = 25;
+            bool isBinary = 26;
+            bool isBoolean = 27;
+            bool isBooleanSchemaFalse = 28;
+            bool isBooleanSchemaTrue = 29;
+            bool isByteArray = 30;
+            bool isCircularReference = 31;
+            bool isContainer = 32;
+            bool isDate = 33;
+            bool isDateTime = 34;
+            bool isDecimal = 35;
+            bool isDiscriminator = 36;
+            bool isDouble = 37;
+            bool isEmail = 38;
+            bool isEnum = 39;
+            bool isEnumOrRef = 40;
+            bool isEnumRef = 41;
+            bool isFile = 42;
+            bool isFloat = 43;
+            bool isFreeFormObject = 44;
+            bool isInherited = 45;
+            bool isInnerEnum = 46;
+            bool isInteger = 47;
+            bool isLong = 48;
+            bool isMap = 49;
+            bool isModel = 50;
+            bool isNew = 51;
+            bool isNull = 52;
+            bool isNullable = 53;
+            bool isNumber = 54;
+            bool isNumeric = 55;
+            bool isPassword = 56;
+            bool isPrimitiveType = 57;
+            bool isReadOnly = 58;
+            bool isSelfReference = 59;
+            bool isShort = 60;
+            bool isString = 61;
+            bool isUnboundedInteger = 62;
+            bool isUri = 63;
+            bool isUuid = 64;
+            bool isVoid = 65;
+            bool isWriteOnly = 66;
+            bool isXmlAttribute = 67;
+            bool isXmlWrapped = 68;
+            string jsonSchema = 69;
+            string name = 70;
+            string nameInCamelCase = 71;
+            string nameInSnakeCase = 72;
+            string openApiType = 73;
+            bool required = 74;
+            repeated google.protobuf.Any requiredVars = 75;
+            bool schemaIsFromAdditionalProperties = 76;
+            string setter = 77;
+            bool uniqueItems = 78;
+            repeated google.protobuf.Any vars = 79;
+            Vendorextensions4 vendorExtensions = 80;
+      }
+
+      message Vendorextensions5 {
+      }
+
+      message Message {
+            bool IExclusiveMaximum = 1;
+            bool additionalPropertiesIsAnyType = 2;
+            string baseName = 3;
+            string baseType = 4;
+            string dataType = 5;
+            string datatype = 6;
+            string datatypeWithEnum = 7;
+            string defaultValue = 8;
+            string defaultValueWithParam = 9;
+            bool deprecated = 10;
+            string example = 11;
+            bool exclusiveMaximum = 12;
+            bool exclusiveMinimum = 13;
+            string getter = 14;
+            bool hasDiscriminatorWithNonEmptyMapping = 15;
+            bool hasItems = 16;
+            bool hasMoreNonReadOnly = 17;
+            bool hasMultipleTypes = 18;
+            bool hasRequired = 19;
+            bool hasValidation = 20;
+            bool hasVars = 21;
+            bool isAnyType = 22;
+            bool isArray = 23;
+            bool isBinary = 24;
+            bool isBoolean = 25;
+            bool isBooleanSchemaFalse = 26;
+            bool isBooleanSchemaTrue = 27;
+            bool isByteArray = 28;
+            bool isCircularReference = 29;
+            bool isContainer = 30;
+            bool isDate = 31;
+            bool isDateTime = 32;
+            bool isDecimal = 33;
+            bool isDiscriminator = 34;
+            bool isDouble = 35;
+            bool isEmail = 36;
+            bool isEnum = 37;
+            bool isEnumOrRef = 38;
+            bool isEnumRef = 39;
+            bool isFile = 40;
+            bool isFloat = 41;
+            bool isFreeFormObject = 42;
+            bool isInherited = 43;
+            bool isInnerEnum = 44;
+            bool isInteger = 45;
+            bool isLong = 46;
+            bool isMap = 47;
+            bool isModel = 48;
+            bool isNew = 49;
+            bool isNull = 50;
+            bool isNullable = 51;
+            bool isNumber = 52;
+            bool isNumeric = 53;
+            bool isPassword = 54;
+            bool isPrimitiveType = 55;
+            bool isReadOnly = 56;
+            bool isSelfReference = 57;
+            bool isShort = 58;
+            bool isString = 59;
+            bool isUnboundedInteger = 60;
+            bool isUri = 61;
+            bool isUuid = 62;
+            bool isVoid = 63;
+            bool isWriteOnly = 64;
+            bool isXmlAttribute = 65;
+            bool isXmlWrapped = 66;
+            string jsonSchema = 67;
+            string name = 68;
+            string nameInCamelCase = 69;
+            string nameInSnakeCase = 70;
+            string openApiType = 71;
+            bool required = 72;
+            repeated google.protobuf.Any requiredVars = 73;
+            bool schemaIsFromAdditionalProperties = 74;
+            string setter = 75;
+            bool uniqueItems = 76;
+            repeated google.protobuf.Any vars = 77;
+            Vendorextensions5 vendorExtensions = 78;
+      }
+
+      message Requiredvarsmap {
+            Code code = 1;
+            Message message = 2;
+      }
+
+      message Vendorextensions6 {
+      }
+
+      message Vars {
+            bool IExclusiveMaximum = 1;
+            bool additionalPropertiesIsAnyType = 2;
+            string baseName = 3;
+            string baseType = 4;
+            string dataFormat = 5;
+            string dataType = 6;
+            string datatype = 7;
+            string datatypeWithEnum = 8;
+            string defaultValue = 9;
+            string defaultValueWithParam = 10;
+            bool deprecated = 11;
+            string example = 12;
+            bool exclusiveMaximum = 13;
+            bool exclusiveMinimum = 14;
+            string format = 15;
+            string getter = 16;
+            bool hasDiscriminatorWithNonEmptyMapping = 17;
+            bool hasItems = 18;
+            bool hasMoreNonReadOnly = 19;
+            bool hasMultipleTypes = 20;
+            bool hasRequired = 21;
+            bool hasValidation = 22;
+            bool hasVars = 23;
+            bool isAnyType = 24;
+            bool isArray = 25;
+            bool isBinary = 26;
+            bool isBoolean = 27;
+            bool isBooleanSchemaFalse = 28;
+            bool isBooleanSchemaTrue = 29;
+            bool isByteArray = 30;
+            bool isCircularReference = 31;
+            bool isContainer = 32;
+            bool isDate = 33;
+            bool isDateTime = 34;
+            bool isDecimal = 35;
+            bool isDiscriminator = 36;
+            bool isDouble = 37;
+            bool isEmail = 38;
+            bool isEnum = 39;
+            bool isEnumOrRef = 40;
+            bool isEnumRef = 41;
+            bool isFile = 42;
+            bool isFloat = 43;
+            bool isFreeFormObject = 44;
+            bool isInherited = 45;
+            bool isInnerEnum = 46;
+            bool isInteger = 47;
+            bool isLong = 48;
+            bool isMap = 49;
+            bool isModel = 50;
+            bool isNew = 51;
+            bool isNull = 52;
+            bool isNullable = 53;
+            bool isNumber = 54;
+            bool isNumeric = 55;
+            bool isPassword = 56;
+            bool isPrimitiveType = 57;
+            bool isReadOnly = 58;
+            bool isSelfReference = 59;
+            bool isShort = 60;
+            bool isString = 61;
+            bool isUnboundedInteger = 62;
+            bool isUri = 63;
+            bool isUuid = 64;
+            bool isVoid = 65;
+            bool isWriteOnly = 66;
+            bool isXmlAttribute = 67;
+            bool isXmlWrapped = 68;
+            string jsonSchema = 69;
+            string name = 70;
+            string nameInCamelCase = 71;
+            string nameInSnakeCase = 72;
+            string openApiType = 73;
+            bool required = 74;
+            repeated google.protobuf.Any requiredVars = 75;
+            bool schemaIsFromAdditionalProperties = 76;
+            string setter = 77;
+            bool uniqueItems = 78;
+            repeated google.protobuf.Any vars = 79;
+            Vendorextensions6 vendorExtensions = 80;
+      }
+
+      message Vendorextensions7 {
+      }
+
+      message Model {
+            bool additionalPropertiesIsAnyType = 1;
+            repeated string allMandatory = 2;
+            repeated google.protobuf.Any allOf = 3;
+            repeated Allvars allVars = 4;
+            repeated google.protobuf.Any anyOf = 5;
+            string classFilename = 6;
+            string classVarName = 7;
+            string classname = 8;
+            string dataType = 9;
+            bool emptyVars = 10;
+            bool exclusiveMaximum = 11;
+            bool exclusiveMinimum = 12;
+            bool hasChildren = 13;
+            bool hasDiscriminatorWithNonEmptyMapping = 14;
+            bool hasEnums = 15;
+            bool hasItems = 16;
+            bool hasMoreModels = 17;
+            bool hasMultipleTypes = 18;
+            bool hasOnlyReadOnly = 19;
+            bool hasOptional = 20;
+            bool hasRequired = 21;
+            bool hasValidation = 22;
+            bool hasVars = 23;
+            repeated google.protobuf.Any imports = 24;
+            bool isAdditionalPropertiesTrue = 25;
+            bool isAlias = 26;
+            bool isAnyType = 27;
+            bool isArray = 28;
+            bool isBinary = 29;
+            bool isBoolean = 30;
+            bool isBooleanSchemaFalse = 31;
+            bool isBooleanSchemaTrue = 32;
+            bool isByteArray = 33;
+            bool isClassnameSanitized = 34;
+            bool isDate = 35;
+            bool isDateTime = 36;
+            bool isDecimal = 37;
+            bool isDeprecated = 38;
+            bool isDouble = 39;
+            bool isEnum = 40;
+            bool isFloat = 41;
+            bool isFreeFormObject = 42;
+            bool isInteger = 43;
+            bool isLong = 44;
+            bool isMap = 45;
+            bool isModel = 46;
+            bool isNull = 47;
+            bool isNullable = 48;
+            bool isNumber = 49;
+            bool isNumeric = 50;
+            bool isPrimitiveType = 51;
+            bool isShort = 52;
+            bool isString = 53;
+            bool isUnboundedInteger = 54;
+            bool isUuid = 55;
+            bool isVoid = 56;
+            repeated string mandatory = 57;
+            string modelJson = 58;
+            string name = 59;
+            repeated Nonnullablevars nonNullableVars = 60;
+            repeated google.protobuf.Any oneOf = 61;
+            repeated google.protobuf.Any optionalVars = 62;
+            repeated google.protobuf.Any parentRequiredVars = 63;
+            repeated google.protobuf.Any parentVars = 64;
+            repeated google.protobuf.Any readOnlyVars = 65;
+            repeated Readwritevars readWriteVars = 66;
+            repeated Requiredvars requiredVars = 67;
+            Requiredvarsmap requiredVarsMap = 68;
+            bool schemaIsFromAdditionalProperties = 69;
+            bool uniqueItems = 70;
+            repeated Vars vars = 71;
+            Vendorextensions7 vendorExtensions = 72;
+      }
+
+      message Models {
+            string importPath = 1;
+            Model model = 2;
+      }
+
+      message Error {
+            string modelSrcPath = 1;
+            string appVersion = 2;
+            string generatorClass = 3;
+            string invokerPackage = 4;
+            bool generateModelDocs = 5;
+            bool generateModelTests = 6;
+            bool generateApiTests = 7;
+            Lambda lambda = 8;
+            bool generateModels = 9;
+            string apiVersion = 10;
+            string inputSpec = 11;
+            string artifactUrl = 12;
+            string developerOrganization = 13;
+            repeated Models models = 14;
+            string package = 15;
+            repeated google.protobuf.Any imports = 16;
+            string appDescription = 17;
+            string licenseName = 18;
+            string interfaceNamePrefix = 19;
+            string releaseNote = 20;
+            string version = 21;
+            string modelDocPath = 22;
+            string escapedInvokerPackage = 23;
+            string abstractNameSuffix = 24;
+            string srcBasePath = 25;
+            string testBasePath = 26;
+            string generatedYear = 27;
+            string modelPackage = 28;
+            string abstractNamePrefix = 29;
+            string gitHost = 30;
+            string apiSrcPath = 31;
+            string apiTestPath = 32;
+            string apiDocPath = 33;
+            string licenseInfo = 34;
+            bool generateApis = 35;
+            string primitives = 36;
+            string developerOrganizationUrl = 37;
+            string interfaceNameSuffix = 38;
+            string packageName = 39;
+            bool hideGenerationTimestamp = 40;
+            string modelTestPath = 41;
+            string unescapedAppDescription = 42;
+            string appName = 43;
+            bool generateApiDocs = 44;
+            string generatorVersion = 45;
+            string traitNameSuffix = 46;
+            string apiPackage = 47;
+            string classname = 48;
+            string gitRepoId = 49;
+            google.protobuf.Timestamp generatedDate = 50;
+            string traitNamePrefix = 51;
+            string appDescriptionWithNewLines = 52;
+            string gitUserId = 53;
+      }
+
+      message Lowercase1 {
+      }
+
+      message Uppercase1 {
+      }
+
+      message Snakecase1 {
+      }
+
+      message Titlecase1 {
+      }
+
+      message Camelcase1 {
+      }
+
+      message Pascalcase1 {
+      }
+
+      message Forwardslash1 {
+      }
+
+      message Backslash1 {
+      }
+
+      message Doublequote1 {
+      }
+
+      message Indented1 {
+      }
+
+      message Indented_81 {
+      }
+
+      message Indented_121 {
+      }
+
+      message Indented_161 {
+      }
+
+      message Lambda1 {
+            Lowercase1 lowercase = 1;
+            Uppercase1 uppercase = 2;
+            Snakecase1 snakecase = 3;
+            Titlecase1 titlecase = 4;
+            Camelcase1 camelcase = 5;
+            Pascalcase1 pascalcase = 6;
+            Forwardslash1 forwardslash = 7;
+            Backslash1 backslash = 8;
+            Doublequote1 doublequote = 9;
+            Indented1 indented = 10;
+            Indented_81 indented_8 = 11;
+            Indented_121 indented_12 = 12;
+            Indented_161 indented_16 = 13;
+      }
+
+      message Vendorextensions8 {
+      }
+
+      message Allvars1 {
+            bool IExclusiveMaximum = 1;
+            bool additionalPropertiesIsAnyType = 2;
+            string baseName = 3;
+            string baseType = 4;
+            string dataFormat = 5;
+            string dataType = 6;
+            string datatype = 7;
+            string datatypeWithEnum = 8;
+            string defaultValue = 9;
+            string defaultValueWithParam = 10;
+            bool deprecated = 11;
+            string example = 12;
+            bool exclusiveMaximum = 13;
+            bool exclusiveMinimum = 14;
+            string format = 15;
+            string getter = 16;
+            bool hasDiscriminatorWithNonEmptyMapping = 17;
+            bool hasItems = 18;
+            bool hasMoreNonReadOnly = 19;
+            bool hasMultipleTypes = 20;
+            bool hasRequired = 21;
+            bool hasValidation = 22;
+            bool hasVars = 23;
+            bool isAnyType = 24;
+            bool isArray = 25;
+            bool isBinary = 26;
+            bool isBoolean = 27;
+            bool isBooleanSchemaFalse = 28;
+            bool isBooleanSchemaTrue = 29;
+            bool isByteArray = 30;
+            bool isCircularReference = 31;
+            bool isContainer = 32;
+            bool isDate = 33;
+            bool isDateTime = 34;
+            bool isDecimal = 35;
+            bool isDiscriminator = 36;
+            bool isDouble = 37;
+            bool isEmail = 38;
+            bool isEnum = 39;
+            bool isEnumOrRef = 40;
+            bool isEnumRef = 41;
+            bool isFile = 42;
+            bool isFloat = 43;
+            bool isFreeFormObject = 44;
+            bool isInherited = 45;
+            bool isInnerEnum = 46;
+            bool isInteger = 47;
+            bool isLong = 48;
+            bool isMap = 49;
+            bool isModel = 50;
+            bool isNew = 51;
+            bool isNull = 52;
+            bool isNullable = 53;
+            bool isNumber = 54;
+            bool isNumeric = 55;
+            bool isPassword = 56;
+            bool isPrimitiveType = 57;
+            bool isReadOnly = 58;
+            bool isSelfReference = 59;
+            bool isShort = 60;
+            bool isString = 61;
+            bool isUnboundedInteger = 62;
+            bool isUri = 63;
+            bool isUuid = 64;
+            bool isVoid = 65;
+            bool isWriteOnly = 66;
+            bool isXmlAttribute = 67;
+            bool isXmlWrapped = 68;
+            string jsonSchema = 69;
+            string name = 70;
+            string nameInCamelCase = 71;
+            string nameInSnakeCase = 72;
+            string openApiType = 73;
+            bool required = 74;
+            repeated google.protobuf.Any requiredVars = 75;
+            bool schemaIsFromAdditionalProperties = 76;
+            string setter = 77;
+            bool uniqueItems = 78;
+            repeated google.protobuf.Any vars = 79;
+            Vendorextensions8 vendorExtensions = 80;
+      }
+
+      message Vendorextensions9 {
+      }
+
+      message Nonnullablevars1 {
+            bool IExclusiveMaximum = 1;
+            bool additionalPropertiesIsAnyType = 2;
+            string baseName = 3;
+            string baseType = 4;
+            string dataFormat = 5;
+            string dataType = 6;
+            string datatype = 7;
+            string datatypeWithEnum = 8;
+            string defaultValue = 9;
+            string defaultValueWithParam = 10;
+            bool deprecated = 11;
+            string example = 12;
+            bool exclusiveMaximum = 13;
+            bool exclusiveMinimum = 14;
+            string format = 15;
+            string getter = 16;
+            bool hasDiscriminatorWithNonEmptyMapping = 17;
+            bool hasItems = 18;
+            bool hasMoreNonReadOnly = 19;
+            bool hasMultipleTypes = 20;
+            bool hasRequired = 21;
+            bool hasValidation = 22;
+            bool hasVars = 23;
+            bool isAnyType = 24;
+            bool isArray = 25;
+            bool isBinary = 26;
+            bool isBoolean = 27;
+            bool isBooleanSchemaFalse = 28;
+            bool isBooleanSchemaTrue = 29;
+            bool isByteArray = 30;
+            bool isCircularReference = 31;
+            bool isContainer = 32;
+            bool isDate = 33;
+            bool isDateTime = 34;
+            bool isDecimal = 35;
+            bool isDiscriminator = 36;
+            bool isDouble = 37;
+            bool isEmail = 38;
+            bool isEnum = 39;
+            bool isEnumOrRef = 40;
+            bool isEnumRef = 41;
+            bool isFile = 42;
+            bool isFloat = 43;
+            bool isFreeFormObject = 44;
+            bool isInherited = 45;
+            bool isInnerEnum = 46;
+            bool isInteger = 47;
+            bool isLong = 48;
+            bool isMap = 49;
+            bool isModel = 50;
+            bool isNew = 51;
+            bool isNull = 52;
+            bool isNullable = 53;
+            bool isNumber = 54;
+            bool isNumeric = 55;
+            bool isPassword = 56;
+            bool isPrimitiveType = 57;
+            bool isReadOnly = 58;
+            bool isSelfReference = 59;
+            bool isShort = 60;
+            bool isString = 61;
+            bool isUnboundedInteger = 62;
+            bool isUri = 63;
+            bool isUuid = 64;
+            bool isVoid = 65;
+            bool isWriteOnly = 66;
+            bool isXmlAttribute = 67;
+            bool isXmlWrapped = 68;
+            string jsonSchema = 69;
+            string name = 70;
+            string nameInCamelCase = 71;
+            string nameInSnakeCase = 72;
+            string openApiType = 73;
+            bool required = 74;
+            repeated google.protobuf.Any requiredVars = 75;
+            bool schemaIsFromAdditionalProperties = 76;
+            string setter = 77;
+            bool uniqueItems = 78;
+            repeated google.protobuf.Any vars = 79;
+            Vendorextensions9 vendorExtensions = 80;
+      }
+
+      message Vendorextensions10 {
+      }
+
+      message Optionalvars {
+            bool IExclusiveMaximum = 1;
+            bool additionalPropertiesIsAnyType = 2;
+            string baseName = 3;
+            string baseType = 4;
+            string dataType = 5;
+            string datatype = 6;
+            string datatypeWithEnum = 7;
+            string defaultValue = 8;
+            string defaultValueWithParam = 9;
+            bool deprecated = 10;
+            string example = 11;
+            bool exclusiveMaximum = 12;
+            bool exclusiveMinimum = 13;
+            string getter = 14;
+            bool hasDiscriminatorWithNonEmptyMapping = 15;
+            bool hasItems = 16;
+            bool hasMoreNonReadOnly = 17;
+            bool hasMultipleTypes = 18;
+            bool hasRequired = 19;
+            bool hasValidation = 20;
+            bool hasVars = 21;
+            bool isAnyType = 22;
+            bool isArray = 23;
+            bool isBinary = 24;
+            bool isBoolean = 25;
+            bool isBooleanSchemaFalse = 26;
+            bool isBooleanSchemaTrue = 27;
+            bool isByteArray = 28;
+            bool isCircularReference = 29;
+            bool isContainer = 30;
+            bool isDate = 31;
+            bool isDateTime = 32;
+            bool isDecimal = 33;
+            bool isDiscriminator = 34;
+            bool isDouble = 35;
+            bool isEmail = 36;
+            bool isEnum = 37;
+            bool isEnumOrRef = 38;
+            bool isEnumRef = 39;
+            bool isFile = 40;
+            bool isFloat = 41;
+            bool isFreeFormObject = 42;
+            bool isInherited = 43;
+            bool isInnerEnum = 44;
+            bool isInteger = 45;
+            bool isLong = 46;
+            bool isMap = 47;
+            bool isModel = 48;
+            bool isNew = 49;
+            bool isNull = 50;
+            bool isNullable = 51;
+            bool isNumber = 52;
+            bool isNumeric = 53;
+            bool isPassword = 54;
+            bool isPrimitiveType = 55;
+            bool isReadOnly = 56;
+            bool isSelfReference = 57;
+            bool isShort = 58;
+            bool isString = 59;
+            bool isUnboundedInteger = 60;
+            bool isUri = 61;
+            bool isUuid = 62;
+            bool isVoid = 63;
+            bool isWriteOnly = 64;
+            bool isXmlAttribute = 65;
+            bool isXmlWrapped = 66;
+            string jsonSchema = 67;
+            string name = 68;
+            string nameInCamelCase = 69;
+            string nameInSnakeCase = 70;
+            string openApiType = 71;
+            bool required = 72;
+            repeated google.protobuf.Any requiredVars = 73;
+            bool schemaIsFromAdditionalProperties = 74;
+            string setter = 75;
+            bool uniqueItems = 76;
+            repeated google.protobuf.Any vars = 77;
+            Vendorextensions10 vendorExtensions = 78;
+      }
+
+      message Vendorextensions11 {
+      }
+
+      message Readwritevars1 {
+            bool IExclusiveMaximum = 1;
+            bool additionalPropertiesIsAnyType = 2;
+            string baseName = 3;
+            string baseType = 4;
+            string dataFormat = 5;
+            string dataType = 6;
+            string datatype = 7;
+            string datatypeWithEnum = 8;
+            string defaultValue = 9;
+            string defaultValueWithParam = 10;
+            bool deprecated = 11;
+            string example = 12;
+            bool exclusiveMaximum = 13;
+            bool exclusiveMinimum = 14;
+            string format = 15;
+            string getter = 16;
+            bool hasDiscriminatorWithNonEmptyMapping = 17;
+            bool hasItems = 18;
+            bool hasMoreNonReadOnly = 19;
+            bool hasMultipleTypes = 20;
+            bool hasRequired = 21;
+            bool hasValidation = 22;
+            bool hasVars = 23;
+            bool isAnyType = 24;
+            bool isArray = 25;
+            bool isBinary = 26;
+            bool isBoolean = 27;
+            bool isBooleanSchemaFalse = 28;
+            bool isBooleanSchemaTrue = 29;
+            bool isByteArray = 30;
+            bool isCircularReference = 31;
+            bool isContainer = 32;
+            bool isDate = 33;
+            bool isDateTime = 34;
+            bool isDecimal = 35;
+            bool isDiscriminator = 36;
+            bool isDouble = 37;
+            bool isEmail = 38;
+            bool isEnum = 39;
+            bool isEnumOrRef = 40;
+            bool isEnumRef = 41;
+            bool isFile = 42;
+            bool isFloat = 43;
+            bool isFreeFormObject = 44;
+            bool isInherited = 45;
+            bool isInnerEnum = 46;
+            bool isInteger = 47;
+            bool isLong = 48;
+            bool isMap = 49;
+            bool isModel = 50;
+            bool isNew = 51;
+            bool isNull = 52;
+            bool isNullable = 53;
+            bool isNumber = 54;
+            bool isNumeric = 55;
+            bool isPassword = 56;
+            bool isPrimitiveType = 57;
+            bool isReadOnly = 58;
+            bool isSelfReference = 59;
+            bool isShort = 60;
+            bool isString = 61;
+            bool isUnboundedInteger = 62;
+            bool isUri = 63;
+            bool isUuid = 64;
+            bool isVoid = 65;
+            bool isWriteOnly = 66;
+            bool isXmlAttribute = 67;
+            bool isXmlWrapped = 68;
+            string jsonSchema = 69;
+            string name = 70;
+            string nameInCamelCase = 71;
+            string nameInSnakeCase = 72;
+            string openApiType = 73;
+            bool required = 74;
+            repeated google.protobuf.Any requiredVars = 75;
+            bool schemaIsFromAdditionalProperties = 76;
+            string setter = 77;
+            bool uniqueItems = 78;
+            repeated google.protobuf.Any vars = 79;
+            Vendorextensions11 vendorExtensions = 80;
+      }
+
+      message Vendorextensions12 {
+      }
+
+      message Requiredvars1 {
+            bool IExclusiveMaximum = 1;
+            bool additionalPropertiesIsAnyType = 2;
+            string baseName = 3;
+            string baseType = 4;
+            string dataFormat = 5;
+            string dataType = 6;
+            string datatype = 7;
+            string datatypeWithEnum = 8;
+            string defaultValue = 9;
+            string defaultValueWithParam = 10;
+            bool deprecated = 11;
+            string example = 12;
+            bool exclusiveMaximum = 13;
+            bool exclusiveMinimum = 14;
+            string format = 15;
+            string getter = 16;
+            bool hasDiscriminatorWithNonEmptyMapping = 17;
+            bool hasItems = 18;
+            bool hasMoreNonReadOnly = 19;
+            bool hasMultipleTypes = 20;
+            bool hasRequired = 21;
+            bool hasValidation = 22;
+            bool hasVars = 23;
+            bool isAnyType = 24;
+            bool isArray = 25;
+            bool isBinary = 26;
+            bool isBoolean = 27;
+            bool isBooleanSchemaFalse = 28;
+            bool isBooleanSchemaTrue = 29;
+            bool isByteArray = 30;
+            bool isCircularReference = 31;
+            bool isContainer = 32;
+            bool isDate = 33;
+            bool isDateTime = 34;
+            bool isDecimal = 35;
+            bool isDiscriminator = 36;
+            bool isDouble = 37;
+            bool isEmail = 38;
+            bool isEnum = 39;
+            bool isEnumOrRef = 40;
+            bool isEnumRef = 41;
+            bool isFile = 42;
+            bool isFloat = 43;
+            bool isFreeFormObject = 44;
+            bool isInherited = 45;
+            bool isInnerEnum = 46;
+            bool isInteger = 47;
+            bool isLong = 48;
+            bool isMap = 49;
+            bool isModel = 50;
+            bool isNew = 51;
+            bool isNull = 52;
+            bool isNullable = 53;
+            bool isNumber = 54;
+            bool isNumeric = 55;
+            bool isPassword = 56;
+            bool isPrimitiveType = 57;
+            bool isReadOnly = 58;
+            bool isSelfReference = 59;
+            bool isShort = 60;
+            bool isString = 61;
+            bool isUnboundedInteger = 62;
+            bool isUri = 63;
+            bool isUuid = 64;
+            bool isVoid = 65;
+            bool isWriteOnly = 66;
+            bool isXmlAttribute = 67;
+            bool isXmlWrapped = 68;
+            string jsonSchema = 69;
+            string name = 70;
+            string nameInCamelCase = 71;
+            string nameInSnakeCase = 72;
+            string openApiType = 73;
+            bool required = 74;
+            repeated google.protobuf.Any requiredVars = 75;
+            bool schemaIsFromAdditionalProperties = 76;
+            string setter = 77;
+            bool uniqueItems = 78;
+            repeated google.protobuf.Any vars = 79;
+            Vendorextensions12 vendorExtensions = 80;
+      }
+
+      message Vendorextensions13 {
+      }
+
+      message Name {
+            bool IExclusiveMaximum = 1;
+            bool additionalPropertiesIsAnyType = 2;
+            string baseName = 3;
+            string baseType = 4;
+            string dataType = 5;
+            string datatype = 6;
+            string datatypeWithEnum = 7;
+            string defaultValue = 8;
+            string defaultValueWithParam = 9;
+            bool deprecated = 10;
+            string example = 11;
+            bool exclusiveMaximum = 12;
+            bool exclusiveMinimum = 13;
+            string getter = 14;
+            bool hasDiscriminatorWithNonEmptyMapping = 15;
+            bool hasItems = 16;
+            bool hasMoreNonReadOnly = 17;
+            bool hasMultipleTypes = 18;
+            bool hasRequired = 19;
+            bool hasValidation = 20;
+            bool hasVars = 21;
+            bool isAnyType = 22;
+            bool isArray = 23;
+            bool isBinary = 24;
+            bool isBoolean = 25;
+            bool isBooleanSchemaFalse = 26;
+            bool isBooleanSchemaTrue = 27;
+            bool isByteArray = 28;
+            bool isCircularReference = 29;
+            bool isContainer = 30;
+            bool isDate = 31;
+            bool isDateTime = 32;
+            bool isDecimal = 33;
+            bool isDiscriminator = 34;
+            bool isDouble = 35;
+            bool isEmail = 36;
+            bool isEnum = 37;
+            bool isEnumOrRef = 38;
+            bool isEnumRef = 39;
+            bool isFile = 40;
+            bool isFloat = 41;
+            bool isFreeFormObject = 42;
+            bool isInherited = 43;
+            bool isInnerEnum = 44;
+            bool isInteger = 45;
+            bool isLong = 46;
+            bool isMap = 47;
+            bool isModel = 48;
+            bool isNew = 49;
+            bool isNull = 50;
+            bool isNullable = 51;
+            bool isNumber = 52;
+            bool isNumeric = 53;
+            bool isPassword = 54;
+            bool isPrimitiveType = 55;
+            bool isReadOnly = 56;
+            bool isSelfReference = 57;
+            bool isShort = 58;
+            bool isString = 59;
+            bool isUnboundedInteger = 60;
+            bool isUri = 61;
+            bool isUuid = 62;
+            bool isVoid = 63;
+            bool isWriteOnly = 64;
+            bool isXmlAttribute = 65;
+            bool isXmlWrapped = 66;
+            string jsonSchema = 67;
+            string name = 68;
+            string nameInCamelCase = 69;
+            string nameInSnakeCase = 70;
+            string openApiType = 71;
+            bool required = 72;
+            repeated google.protobuf.Any requiredVars = 73;
+            bool schemaIsFromAdditionalProperties = 74;
+            string setter = 75;
+            bool uniqueItems = 76;
+            repeated google.protobuf.Any vars = 77;
+            Vendorextensions13 vendorExtensions = 78;
+      }
+
+      message Vendorextensions14 {
+      }
+
+      message Id {
+            bool IExclusiveMaximum = 1;
+            bool additionalPropertiesIsAnyType = 2;
+            string baseName = 3;
+            string baseType = 4;
+            string dataFormat = 5;
+            string dataType = 6;
+            string datatype = 7;
+            string datatypeWithEnum = 8;
+            string defaultValue = 9;
+            string defaultValueWithParam = 10;
+            bool deprecated = 11;
+            string example = 12;
+            bool exclusiveMaximum = 13;
+            bool exclusiveMinimum = 14;
+            string format = 15;
+            string getter = 16;
+            bool hasDiscriminatorWithNonEmptyMapping = 17;
+            bool hasItems = 18;
+            bool hasMoreNonReadOnly = 19;
+            bool hasMultipleTypes = 20;
+            bool hasRequired = 21;
+            bool hasValidation = 22;
+            bool hasVars = 23;
+            bool isAnyType = 24;
+            bool isArray = 25;
+            bool isBinary = 26;
+            bool isBoolean = 27;
+            bool isBooleanSchemaFalse = 28;
+            bool isBooleanSchemaTrue = 29;
+            bool isByteArray = 30;
+            bool isCircularReference = 31;
+            bool isContainer = 32;
+            bool isDate = 33;
+            bool isDateTime = 34;
+            bool isDecimal = 35;
+            bool isDiscriminator = 36;
+            bool isDouble = 37;
+            bool isEmail = 38;
+            bool isEnum = 39;
+            bool isEnumOrRef = 40;
+            bool isEnumRef = 41;
+            bool isFile = 42;
+            bool isFloat = 43;
+            bool isFreeFormObject = 44;
+            bool isInherited = 45;
+            bool isInnerEnum = 46;
+            bool isInteger = 47;
+            bool isLong = 48;
+            bool isMap = 49;
+            bool isModel = 50;
+            bool isNew = 51;
+            bool isNull = 52;
+            bool isNullable = 53;
+            bool isNumber = 54;
+            bool isNumeric = 55;
+            bool isPassword = 56;
+            bool isPrimitiveType = 57;
+            bool isReadOnly = 58;
+            bool isSelfReference = 59;
+            bool isShort = 60;
+            bool isString = 61;
+            bool isUnboundedInteger = 62;
+            bool isUri = 63;
+            bool isUuid = 64;
+            bool isVoid = 65;
+            bool isWriteOnly = 66;
+            bool isXmlAttribute = 67;
+            bool isXmlWrapped = 68;
+            string jsonSchema = 69;
+            string name = 70;
+            string nameInCamelCase = 71;
+            string nameInSnakeCase = 72;
+            string openApiType = 73;
+            bool required = 74;
+            repeated google.protobuf.Any requiredVars = 75;
+            bool schemaIsFromAdditionalProperties = 76;
+            string setter = 77;
+            bool uniqueItems = 78;
+            repeated google.protobuf.Any vars = 79;
+            Vendorextensions14 vendorExtensions = 80;
+      }
+
+      message Requiredvarsmap1 {
+            Name name = 1;
+            Id id = 2;
+      }
+
+      message Vendorextensions15 {
+      }
+
+      message Vars1 {
+            bool IExclusiveMaximum = 1;
+            bool additionalPropertiesIsAnyType = 2;
+            string baseName = 3;
+            string baseType = 4;
+            string dataFormat = 5;
+            string dataType = 6;
+            string datatype = 7;
+            string datatypeWithEnum = 8;
+            string defaultValue = 9;
+            string defaultValueWithParam = 10;
+            bool deprecated = 11;
+            string example = 12;
+            bool exclusiveMaximum = 13;
+            bool exclusiveMinimum = 14;
+            string format = 15;
+            string getter = 16;
+            bool hasDiscriminatorWithNonEmptyMapping = 17;
+            bool hasItems = 18;
+            bool hasMoreNonReadOnly = 19;
+            bool hasMultipleTypes = 20;
+            bool hasRequired = 21;
+            bool hasValidation = 22;
+            bool hasVars = 23;
+            bool isAnyType = 24;
+            bool isArray = 25;
+            bool isBinary = 26;
+            bool isBoolean = 27;
+            bool isBooleanSchemaFalse = 28;
+            bool isBooleanSchemaTrue = 29;
+            bool isByteArray = 30;
+            bool isCircularReference = 31;
+            bool isContainer = 32;
+            bool isDate = 33;
+            bool isDateTime = 34;
+            bool isDecimal = 35;
+            bool isDiscriminator = 36;
+            bool isDouble = 37;
+            bool isEmail = 38;
+            bool isEnum = 39;
+            bool isEnumOrRef = 40;
+            bool isEnumRef = 41;
+            bool isFile = 42;
+            bool isFloat = 43;
+            bool isFreeFormObject = 44;
+            bool isInherited = 45;
+            bool isInnerEnum = 46;
+            bool isInteger = 47;
+            bool isLong = 48;
+            bool isMap = 49;
+            bool isModel = 50;
+            bool isNew = 51;
+            bool isNull = 52;
+            bool isNullable = 53;
+            bool isNumber = 54;
+            bool isNumeric = 55;
+            bool isPassword = 56;
+            bool isPrimitiveType = 57;
+            bool isReadOnly = 58;
+            bool isSelfReference = 59;
+            bool isShort = 60;
+            bool isString = 61;
+            bool isUnboundedInteger = 62;
+            bool isUri = 63;
+            bool isUuid = 64;
+            bool isVoid = 65;
+            bool isWriteOnly = 66;
+            bool isXmlAttribute = 67;
+            bool isXmlWrapped = 68;
+            string jsonSchema = 69;
+            string name = 70;
+            string nameInCamelCase = 71;
+            string nameInSnakeCase = 72;
+            string openApiType = 73;
+            bool required = 74;
+            repeated google.protobuf.Any requiredVars = 75;
+            bool schemaIsFromAdditionalProperties = 76;
+            string setter = 77;
+            bool uniqueItems = 78;
+            repeated google.protobuf.Any vars = 79;
+            Vendorextensions15 vendorExtensions = 80;
+      }
+
+      message Vendorextensions16 {
+      }
+
+      message Model1 {
+            bool additionalPropertiesIsAnyType = 1;
+            repeated string allMandatory = 2;
+            repeated google.protobuf.Any allOf = 3;
+            repeated Allvars1 allVars = 4;
+            repeated google.protobuf.Any anyOf = 5;
+            string classFilename = 6;
+            string classVarName = 7;
+            string classname = 8;
+            string dataType = 9;
+            bool emptyVars = 10;
+            bool exclusiveMaximum = 11;
+            bool exclusiveMinimum = 12;
+            bool hasChildren = 13;
+            bool hasDiscriminatorWithNonEmptyMapping = 14;
+            bool hasEnums = 15;
+            bool hasItems = 16;
+            bool hasMoreModels = 17;
+            bool hasMultipleTypes = 18;
+            bool hasOnlyReadOnly = 19;
+            bool hasOptional = 20;
+            bool hasRequired = 21;
+            bool hasValidation = 22;
+            bool hasVars = 23;
+            repeated google.protobuf.Any imports = 24;
+            bool isAdditionalPropertiesTrue = 25;
+            bool isAlias = 26;
+            bool isAnyType = 27;
+            bool isArray = 28;
+            bool isBinary = 29;
+            bool isBoolean = 30;
+            bool isBooleanSchemaFalse = 31;
+            bool isBooleanSchemaTrue = 32;
+            bool isByteArray = 33;
+            bool isClassnameSanitized = 34;
+            bool isDate = 35;
+            bool isDateTime = 36;
+            bool isDecimal = 37;
+            bool isDeprecated = 38;
+            bool isDouble = 39;
+            bool isEnum = 40;
+            bool isFloat = 41;
+            bool isFreeFormObject = 42;
+            bool isInteger = 43;
+            bool isLong = 44;
+            bool isMap = 45;
+            bool isModel = 46;
+            bool isNull = 47;
+            bool isNullable = 48;
+            bool isNumber = 49;
+            bool isNumeric = 50;
+            bool isPrimitiveType = 51;
+            bool isShort = 52;
+            bool isString = 53;
+            bool isUnboundedInteger = 54;
+            bool isUuid = 55;
+            bool isVoid = 56;
+            repeated string mandatory = 57;
+            string modelJson = 58;
+            string name = 59;
+            repeated Nonnullablevars1 nonNullableVars = 60;
+            repeated google.protobuf.Any oneOf = 61;
+            repeated Optionalvars optionalVars = 62;
+            repeated google.protobuf.Any parentRequiredVars = 63;
+            repeated google.protobuf.Any parentVars = 64;
+            repeated google.protobuf.Any readOnlyVars = 65;
+            repeated Readwritevars1 readWriteVars = 66;
+            repeated Requiredvars1 requiredVars = 67;
+            Requiredvarsmap1 requiredVarsMap = 68;
+            bool schemaIsFromAdditionalProperties = 69;
+            bool uniqueItems = 70;
+            repeated Vars1 vars = 71;
+            Vendorextensions16 vendorExtensions = 72;
+      }
+
+      message Models1 {
+            string importPath = 1;
+            Model1 model = 2;
+      }
+
+      message Pet {
+            string modelSrcPath = 1;
+            string appVersion = 2;
+            string generatorClass = 3;
+            string invokerPackage = 4;
+            bool generateModelDocs = 5;
+            bool generateModelTests = 6;
+            bool generateApiTests = 7;
+            Lambda1 lambda = 8;
+            bool generateModels = 9;
+            string apiVersion = 10;
+            string inputSpec = 11;
+            string artifactUrl = 12;
+            string developerOrganization = 13;
+            repeated Models1 models = 14;
+            string package = 15;
+            repeated google.protobuf.Any imports = 16;
+            string appDescription = 17;
+            string licenseName = 18;
+            string interfaceNamePrefix = 19;
+            string releaseNote = 20;
+            string version = 21;
+            string modelDocPath = 22;
+            string escapedInvokerPackage = 23;
+            string abstractNameSuffix = 24;
+            string srcBasePath = 25;
+            string testBasePath = 26;
+            string generatedYear = 27;
+            string modelPackage = 28;
+            string abstractNamePrefix = 29;
+            string gitHost = 30;
+            string apiSrcPath = 31;
+            string apiTestPath = 32;
+            string apiDocPath = 33;
+            string licenseInfo = 34;
+            bool generateApis = 35;
+            string primitives = 36;
+            string developerOrganizationUrl = 37;
+            string interfaceNameSuffix = 38;
+            string packageName = 39;
+            bool hideGenerationTimestamp = 40;
+            string modelTestPath = 41;
+            string unescapedAppDescription = 42;
+            string appName = 43;
+            bool generateApiDocs = 44;
+            string generatorVersion = 45;
+            string traitNameSuffix = 46;
+            string apiPackage = 47;
+            string classname = 48;
+            string gitRepoId = 49;
+            google.protobuf.Timestamp generatedDate = 50;
+            string traitNamePrefix = 51;
+            string appDescriptionWithNewLines = 52;
+            string gitUserId = 53;
+      }
+
+      Error Error = 1;
+      Pet Pet = 2;
+      message Lowercase {
+      }
+
+      message Uppercase {
+      }
+
+      message Snakecase {
+      }
+
+      message Titlecase {
+      }
+
+      message Camelcase {
+      }
+
+      message Pascalcase {
+      }
+
+      message Forwardslash {
+      }
+
+      message Backslash {
+      }
+
+      message Doublequote {
+      }
+
+      message Indented {
+      }
+
+      message Indented_8 {
+      }
+
+      message Indented_12 {
+      }
+
+      message Indented_16 {
+      }
+
+      message Lambda {
+            Lowercase lowercase = 1;
+            Uppercase uppercase = 2;
+            Snakecase snakecase = 3;
+            Titlecase titlecase = 4;
+            Camelcase camelcase = 5;
+            Pascalcase pascalcase = 6;
+            Forwardslash forwardslash = 7;
+            Backslash backslash = 8;
+            Doublequote doublequote = 9;
+            Indented indented = 10;
+            Indented_8 indented_8 = 11;
+            Indented_12 indented_12 = 12;
+            Indented_16 indented_16 = 13;
+      }
+
+      message Vendorextensions {
+      }
+}

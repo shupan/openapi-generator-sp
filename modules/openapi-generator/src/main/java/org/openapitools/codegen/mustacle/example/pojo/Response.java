@@ -1,9 +1,7 @@
 package org.openapitools.codegen.mustacle.example.pojo;
 
-import java.util.Arrays;
 import java.util.List;
 import com.alibaba.fastjson2.annotation.JSONField;
-import org.openapitools.codegen.mustacle.example.Example;
 
 public class Response{
 
@@ -732,32 +730,4 @@ public class Response{
 	public String getGitUserId(){
 		return gitUserId;
 	}
-
-
-	List<Item2> items() {
-		return Arrays.asList(
-				new Item2("Item 1", "$19.99", Arrays.asList(new Feature("New!"), new Feature("Awesome!"))),
-				new Item2("Item 2", "$29.99", Arrays.asList(new Feature("Old."), new Feature("Ugly."))),
-				new Item2("Item 3", "$39.99", Arrays.asList(new Feature("Old."), new Feature("Ugly.")))
-		);
-	}
-	static class Item2 {
-		Item2(String name, String price, List<Feature> features) {
-			this.name = name;
-			this.price = price;
-			this.features = features;
-		}
-
-		String name, price;
-		List<Feature> features;
-	}
-
-	static class Feature {
-		Feature(String description) {
-			this.description = description;
-		}
-
-		String description;
-	}
-
 }

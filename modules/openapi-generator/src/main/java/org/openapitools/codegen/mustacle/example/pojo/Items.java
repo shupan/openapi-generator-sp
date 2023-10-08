@@ -245,7 +245,6 @@ public class Items{
 	@JSONField(name="exampleSetFlag")
 	private boolean exampleSetFlag;
 
-
 	public void setGetter(String getter){
 		this.getter = getter;
 	}
@@ -334,6 +333,13 @@ public class Items{
 		return isInteger;
 	}
 
+	public void setRef(String ref){
+		this.ref = ref;
+	}
+
+	public String getRef(){
+		return ref;
+	}
 
 	public void setIsNumber(boolean isNumber){
 		this.isNumber = isNumber;
@@ -877,13 +883,5 @@ public class Items{
 
 	public boolean isExampleSetFlag(){
 		return exampleSetFlag;
-	}
-
-	public void setRef(String ref){
-		this.ref = ref;
-	}
-
-	public String getRef(){
-		return ref;
 	}
 }
