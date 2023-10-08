@@ -1,0 +1,15 @@
+{{#items}}
+    Name: {{name}}
+    Price: {{price}}
+    {{#features}}
+        Feature: {{description}}
+    {{/features}}
+{{/items}}
+
+{{#imports}}
+    Name: {{import}}
+    Price: {{classname}}
+    {{#features}}
+        Feature: {{description}}
+    {{/features}}
+{{/imports}}
