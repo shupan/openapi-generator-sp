@@ -66,14 +66,26 @@ public class GenerateRealInvokeTest {
 //        configurator = mock(CodegenConfigurator.class, mockSettings);
     }
 
+//    @Test
+//    public void testAiboxCmd() {
+//        String value = "io.foo.bar.api";
+//        //setupAndRunGenericTest("--api-package", value);
+//        setupAndRunTest("-i",
+//                "http://127.0.0.1:4523/export/openapi?projectId=3365095&specialPurpose=openapi-generator&apiDetailId=114295607",
+//                "-g", "php-aibox", "-o",
+//                "/Users/macx/Documents/Apifox/CodeGenerator", false, null,
+//                "--api-package", value);
+//        //verify(configurator).setApiPackage(value);
+//    }
+
     @Test
-    public void testAiboxCmd() {
+    public void testThinkPhpOutput() {
         String value = "io.foo.bar.api";
         //setupAndRunGenericTest("--api-package", value);
         setupAndRunTest("-i",
-                "http://127.0.0.1:4523/export/openapi?projectId=3365095&specialPurpose=openapi-generator&apiDetailId=114295630",
-                "-g", "php-aibox", "-o",
-                "/Users/macx/Documents/Apifox/CodeGenerator", false, null,
+                "http://127.0.0.1:4523/export/openapi?projectId=3365095&specialPurpose=openapi-generator&apiDetailId=114295607",
+                "-g", "php-thinkphp", "-o",
+                "/Users/macx/Documents/03project/chinami/gckit/Modules/AiboxUser", false, null,
                 "--api-package", value);
         //verify(configurator).setApiPackage(value);
     }
@@ -83,7 +95,7 @@ public class GenerateRealInvokeTest {
         String value = "io.foo.bar.api";
         //setupAndRunGenericTest("--api-package", value);
         setupAndRunTest("-i",
-                "http://127.0.0.1:4523/export/openapi?projectId=3365095&specialPurpose=openapi-generator&apiDetailId=114295630",
+                "http://127.0.0.1:4523/export/openapi?projectId=3365095&specialPurpose=openapi-generator&apiDetailId=114295607",
                 "-g", "php-thinkphp", "-o",
                 "/Users/macx/Documents/Apifox/CodeGenerator", false, null,
                 "--api-package", value);

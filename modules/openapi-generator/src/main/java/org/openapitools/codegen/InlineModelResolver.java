@@ -555,8 +555,13 @@ public class InlineModelResolver {
             String key = responsesEntry.getKey();
             ApiResponse response = responsesEntry.getValue();
 
+            // @sp 去掉了response的值 ， @TODO 要去掉Response的值key
             flattenContent(response.getContent(),
-                    (operation.getOperationId() == null ? modelName : operation.getOperationId()) + "_" + key + "_response");
+                    (operation.getOperationId() == null ? modelName : operation.getOperationId()));
+
+//            flattenContent(response.getContent(),
+//                    (operation.getOperationId() == null ? modelName : operation.getOperationId()) + "_" + key + "_response");
+
         }
     }
 

@@ -18,10 +18,7 @@
 package org.openapitools.codegen.languages;
 
 import io.swagger.v3.oas.models.media.Schema;
-import org.openapitools.codegen.CodegenOperation;
-import org.openapitools.codegen.CodegenProperty;
-import org.openapitools.codegen.CodegenType;
-import org.openapitools.codegen.SupportingFile;
+import org.openapitools.codegen.*;
 import org.openapitools.codegen.meta.features.*;
 import org.openapitools.codegen.model.ModelMap;
 import org.openapitools.codegen.model.OperationMap;
@@ -108,7 +105,7 @@ public class PhpThinkphpServerCodegen extends AbstractPhpCodegen {
         /*
          * Model Package.  Optional, if needed, this can be used in templates
          */
-        modelPackage = "app\\Models";
+        modelPackage = "app\\Http\\DTO";
 
         // template files want to be ignored
         apiTestTemplateFiles.clear();
@@ -129,11 +126,11 @@ public class PhpThinkphpServerCodegen extends AbstractPhpCodegen {
          *
          * 把需要支持的文件添加到容器里面下
          * */
-        supportingFiles.add(new SupportingFile("composer.mustache", outputFolder, "composer.json"));
-        supportingFiles.add(new SupportingFile("README.md", outputFolder, "README.md"));
-        supportingFiles.add(new SupportingFile("artisan", outputFolder, "artisan"));
-        supportingFiles.add(new SupportingFile("package.json", outputFolder, "package.json"));
-        supportingFiles.add(new SupportingFile("phpunit.xml", outputFolder, "phpunit.xml"));
+//        supportingFiles.add(new SupportingFile("composer.mustache", outputFolder, "composer.json"));
+//        supportingFiles.add(new SupportingFile("README.md", outputFolder, "README.md"));
+//        supportingFiles.add(new SupportingFile("artisan", outputFolder, "artisan"));
+//        supportingFiles.add(new SupportingFile("package.json", outputFolder, "package.json"));
+//        supportingFiles.add(new SupportingFile("phpunit.xml", outputFolder, "phpunit.xml"));
 //        supportingFiles.add(new SupportingFile("webpack.mix.js", outputFolder, "webpack.mix.js"));
 //        supportingFiles.add(new SupportingFile("editorconfig", outputFolder, ".editorconfig"));
 //        supportingFiles.add(new SupportingFile("env.example", outputFolder, ".env.example"));
@@ -159,7 +156,7 @@ public class PhpThinkphpServerCodegen extends AbstractPhpCodegen {
 //        supportingFiles.add(new SupportingFile("routes/console.mustache", outputFolder + File.separator + "routes", "console.php"));
 
         /* /app/Http/Controllers/ */
-        supportingFiles.add(new SupportingFile("app/Http/Kernel.php", outputFolder + File.separator + "app" + File.separator + "Http", "Kernel.php"));
+        //supportingFiles.add(new SupportingFile("app/Http/Kernel.php", outputFolder + File.separator + "app" + File.separator + "Http", "Kernel.php"));
         supportingFiles.add(new SupportingFile("app/Http/Controllers/Controller.php", outputFolder + File.separator + "app" + File.separator + "Http" + File.separator + "Controllers", "Controller.php"));
 //        supportingFiles.add(new SupportingFile("app/Http/Middleware/Authenticate.php", outputFolder + File.separator + "app" + File.separator + "Http" + File.separator + "Middleware", "Authenticate.php"));
 //        supportingFiles.add(new SupportingFile("app/Http/Middleware/CheckForMaintenanceMode.php", outputFolder + File.separator + "app" + File.separator + "Http" + File.separator + "Middleware", "CheckForMaintenanceMode.php"));
@@ -170,7 +167,7 @@ public class PhpThinkphpServerCodegen extends AbstractPhpCodegen {
 //        supportingFiles.add(new SupportingFile("app/Http/Middleware/VerifyCsrfToken.php", outputFolder + File.separator + "app" + File.separator + "Http" + File.separator + "Middleware", "VerifyCsrfToken.php"));
 
         // /app/Console
-        supportingFiles.add(new SupportingFile("app/Console/Kernel.php", outputFolder + File.separator + "app" + File.separator + "Console", "Kernel.php"));
+        //supportingFiles.add(new SupportingFile("app/Console/Kernel.php", outputFolder + File.separator + "app" + File.separator + "Console", "Kernel.php"));
         // /app/Exceptions
         supportingFiles.add(new SupportingFile("app/Exceptions/Handler.php", outputFolder + File.separator + "app" + File.separator + "Exceptions", "Handler.php"));
 //        // /app/Providers
@@ -180,7 +177,7 @@ public class PhpThinkphpServerCodegen extends AbstractPhpCodegen {
 //        supportingFiles.add(new SupportingFile("app/Providers/EventServiceProvider.php", outputFolder + File.separator + "app" + File.separator + "Providers", "EventServiceProvider.php"));
 //        supportingFiles.add(new SupportingFile("app/Providers/RouteServiceProvider.php", outputFolder + File.separator + "app" + File.separator + "Providers", "RouteServiceProvider.php"));
         // /app/
-        supportingFiles.add(new SupportingFile("app/User.php", outputFolder + File.separator + "app", "RouteServiceProvider.php"));
+        //supportingFiles.add(new SupportingFile("app/User.php", outputFolder + File.separator + "app", "RouteServiceProvider.php"));
 
 //        // /database/
 //        supportingFiles.add(new SupportingFile("database/factories/UserFactory.php", outputFolder + File.separator + "database" + File.separator + "factories", "UserFactory.php"));
@@ -239,7 +236,7 @@ public class PhpThinkphpServerCodegen extends AbstractPhpCodegen {
     @Override
     public void processOpts() {
         super.processOpts();
-
+//        this.setModelPackage("DTO");
         // remove gitignore supporting file from AbstractPhpCodegen
         supportingFiles.remove(supportingFiles.size() - 1);
     }
