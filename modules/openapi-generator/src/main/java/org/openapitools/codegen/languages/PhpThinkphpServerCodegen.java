@@ -126,6 +126,7 @@ public class PhpThinkphpServerCodegen extends AbstractPhpCodegen {
          *
          * 把需要支持的文件添加到容器里面下
          * */
+        appendSupportingFiles();
 //        supportingFiles.add(new SupportingFile("composer.mustache", outputFolder, "composer.json"));
 //        supportingFiles.add(new SupportingFile("README.md", outputFolder, "README.md"));
 //        supportingFiles.add(new SupportingFile("artisan", outputFolder, "artisan"));
@@ -157,7 +158,7 @@ public class PhpThinkphpServerCodegen extends AbstractPhpCodegen {
 
         /* /app/Http/Controllers/ */
         //supportingFiles.add(new SupportingFile("app/Http/Kernel.php", outputFolder + File.separator + "app" + File.separator + "Http", "Kernel.php"));
-        supportingFiles.add(new SupportingFile("app/Http/Controllers/Controller.php", outputFolder + File.separator + "app" + File.separator + "Http" + File.separator + "Controllers", "Controller.php"));
+        //supportingFiles.add(new SupportingFile("app/Http/Controllers/Controller.php", outputFolder + File.separator + "app" + File.separator + "Http" + File.separator + "Controllers", "Controller.php"));
 //        supportingFiles.add(new SupportingFile("app/Http/Middleware/Authenticate.php", outputFolder + File.separator + "app" + File.separator + "Http" + File.separator + "Middleware", "Authenticate.php"));
 //        supportingFiles.add(new SupportingFile("app/Http/Middleware/CheckForMaintenanceMode.php", outputFolder + File.separator + "app" + File.separator + "Http" + File.separator + "Middleware", "CheckForMaintenanceMode.php"));
 //        supportingFiles.add(new SupportingFile("app/Http/Middleware/EncryptCookies.php", outputFolder + File.separator + "app" + File.separator + "Http" + File.separator + "Middleware", "EncryptCookies.php"));
@@ -169,7 +170,7 @@ public class PhpThinkphpServerCodegen extends AbstractPhpCodegen {
         // /app/Console
         //supportingFiles.add(new SupportingFile("app/Console/Kernel.php", outputFolder + File.separator + "app" + File.separator + "Console", "Kernel.php"));
         // /app/Exceptions
-        supportingFiles.add(new SupportingFile("app/Exceptions/Handler.php", outputFolder + File.separator + "app" + File.separator + "Exceptions", "Handler.php"));
+        //supportingFiles.add(new SupportingFile("app/Exceptions/Handler.php", outputFolder + File.separator + "app" + File.separator + "Exceptions", "Handler.php"));
 //        // /app/Providers
 //        supportingFiles.add(new SupportingFile("app/Providers/AppServiceProvider.php", outputFolder + File.separator + "app" + File.separator + "Providers", "AppServiceProvider.php"));
 //        supportingFiles.add(new SupportingFile("app/Providers/AuthServiceProvider.php", outputFolder + File.separator + "app" + File.separator + "Providers", "AuthServiceProvider.php"));
@@ -231,6 +232,125 @@ public class PhpThinkphpServerCodegen extends AbstractPhpCodegen {
 //        supportingFiles.add(new SupportingFile("tests/Unit/ExampleTest.php", outputFolder + File.separator + "tests" + File.separator + "Unit", "ExampleTest.php"));
 //        supportingFiles.add(new SupportingFile("tests/CreatesApplication.php", outputFolder + File.separator + "tests", "CreatesApplication.php"));
 //        supportingFiles.add(new SupportingFile("tests/TestCase.php", outputFolder + File.separator + "tests", "TestCase.php"));
+    }
+
+    /**
+     * ├── Component
+     * │   ├── Converter
+     * │   │   └── DepartmentESConverter.php
+     * │   ├── InspireCommand.php
+     * │   ├── InspireES.php
+     * │   ├── InspireKafka.php
+     * │   ├── InspireRedis.php
+     * │   ├── InspireSwoole.php
+     * │   └── Validator
+     * │       └── DepartmentESValidator.php
+     * ├── Config
+     * │   └── config.php
+     * ├── Domain
+     * │   ├── DTO
+     * │   │   ├── DepartmentCreateRequest.php
+     * │   │   ├── DepartmentCreateResponse.php
+     * │   │   ├── DepartmentGetRequest.php
+     * │   │   ├── DepartmentGetResponse.php
+     * │   │   └── DepartmentUpdateResponse.php
+     * │   ├── Enum
+     * │   │   └── DepartmentEnum.php
+     * │   └── Fields
+     * │       └── DepartmentInfoFields.php
+     * ├── Exceptions
+     * │   ├── DepartmentException.php
+     * │   ├── DepartmentTransformException.php
+     * │   └── DepartmentValidatorException.php
+     * ├── External
+     * │   ├── Attendance
+     * │   │   ├── CompleteRequestApi.php
+     * │   │   └── CompleteResponseApi.php
+     * │   └── AttendanceExternal.php
+     * ├── Http
+     * │   ├── Controllers
+     * │   │   └── DepartmentController.php
+     * │   └── routes.php
+     * ├── Model
+     * │   └── DepartmentModel.php
+     * ├── Services
+     * │   ├── Converter
+     * │   │   └── DepartmentConverter.php
+     * │   ├── DepartmentService.php
+     * │   └── Validator
+     * │       └── DepartmentValidator.php
+     * ├── Tests
+     * │   ├── Component
+     * │   ├── Helpers
+     * │   ├── Model
+     * │   │   └── DepartmentModelTest.php
+     * │   ├── Services
+     * │   │   └── DepartmentServiceTest.php
+     * │   └── Utils
+     * ├── Utils
+     * │   └── DepartmentTreeUtils.php
+     * ├── api.mustache
+     * ├── department.sql
+     * ├── model.mustache
+     * ├── model_enum.mustache
+     * └── model_generic.mustache
+     */
+    public void appendSupportingFiles(){
+
+        // 根据注释的路径填充support的文件
+        supportingFiles.add(new SupportingFile("Component/Converter/DepartmentESConverter.php",
+                outputFolder + File.separator + "Component" + File.separator + "Converter" + File.separator, "DepartmentESConverter.php"));
+        supportingFiles.add(new SupportingFile("Component/Validator/DepartmentESValidator.php",
+                outputFolder + File.separator + "Component" + File.separator + "Validator" + File.separator, "DepartmentESValidator.php"));
+        supportingFiles.add(new SupportingFile("Config/config.php",
+                outputFolder + File.separator + "Config" + File.separator, "config.php"));
+        supportingFiles.add(new SupportingFile("Domain/DTO/DepartmentCreateRequest.php",
+                outputFolder + File.separator + "Domain" + File.separator + "DTO" + File.separator, "DepartmentCreateRequest.php"));
+        supportingFiles.add(new SupportingFile("Domain/DTO/DepartmentCreateResponse.php",
+                outputFolder + File.separator + "Domain" + File.separator + "DTO" + File.separator, "DepartmentCreateResponse.php"));
+        supportingFiles.add(new SupportingFile("Domain/DTO/DepartmentGetRequest.php",
+                outputFolder + File.separator + "Domain" + File.separator + "DTO" + File.separator, "DepartmentGetRequest.php"));
+        supportingFiles.add(new SupportingFile("Domain/DTO/DepartmentGetResponse.php",
+                outputFolder + File.separator + "Domain" + File.separator + "DTO" + File.separator, "DepartmentGetResponse.php"));
+        supportingFiles.add(new SupportingFile("Domain/DTO/DepartmentUpdateResponse.php",
+                outputFolder + File.separator + "Domain" + File.separator + "DTO" + File.separator, "DepartmentUpdateResponse.php"));
+        supportingFiles.add(new SupportingFile("Domain/Enum/DepartmentEnum.php",
+                outputFolder + File.separator + "Domain" + File.separator + "Enum" + File.separator, "DepartmentEnum.php"));
+        supportingFiles.add(new SupportingFile("Domain/Fields/DepartmentInfoFields.php",
+                outputFolder + File.separator + "Domain" + File.separator + "Fields" + File.separator, "DepartmentInfoFields.php"));
+        supportingFiles.add(new SupportingFile("Exceptions/DepartmentException.php",
+                outputFolder + File.separator + "Exceptions" + File.separator, "DepartmentException.php"));
+        supportingFiles.add(new SupportingFile("Exceptions/DepartmentValidatorException.php",
+                outputFolder + File.separator + "Exceptions" + File.separator, "DepartmentValidatorException.php"));
+        supportingFiles.add(new SupportingFile("External/Attendance/CompleteRequestApi.php",
+                outputFolder + File.separator + "External" + File.separator + "Attendance" + File.separator, "CompleteRequestApi.php"));
+        supportingFiles.add(new SupportingFile("External/Attendance/CompleteResponseApi.php",
+                outputFolder + File.separator + "External" + File.separator + "Attendance" + File.separator, "CompleteResponseApi.php"));
+        supportingFiles.add(new SupportingFile("External/AttendanceExternal.php",
+                outputFolder + File.separator + "External" + File.separator, "AttendanceExternal.php"));
+        supportingFiles.add(new SupportingFile("Http/Controllers/DepartmentController.php",
+                outputFolder + File.separator + "Http" + File.separator + "Controllers" + File.separator, "DepartmentController.php"));
+        supportingFiles.add(new SupportingFile("Http/routes.php",
+                outputFolder + File.separator + "Http" + File.separator, "routes.php"));
+        supportingFiles.add(new SupportingFile("Model/DepartmentModel.php",
+                outputFolder + File.separator + "Model" + File.separator, "DepartmentModel.php"));
+        supportingFiles.add(new SupportingFile("Services/Converter/DepartmentConverter.php",
+                outputFolder + File.separator + "Services" + File.separator + "Converter" + File.separator, "DepartmentConverter.php"));
+        supportingFiles.add(new SupportingFile("Services/DepartmentService.php",
+                outputFolder + File.separator + "Services" + File.separator, "DepartmentService.php"));
+        supportingFiles.add(new SupportingFile("Services/Validator/DepartmentValidator.php",
+                outputFolder + File.separator + "Services" + File.separator + "Validator" + File.separator, "DepartmentValidator.php"));
+//        supportingFiles.add(new SupportingFile("Tests/Helpers/DepartmentHelper.php",
+//                outputFolder + File.separator + "Tests" + File.separator + "Helpers" + File.separator, "DepartmentHelper.php"));
+        supportingFiles.add(new SupportingFile("Tests/Model/DepartmentModelTest.php",
+                outputFolder + File.separator + "Tests" + File.separator + "Model" + File.separator, "DepartmentModelTest.php"));
+        supportingFiles.add(new SupportingFile("Tests/Services/DepartmentServiceTest.php",
+                outputFolder + File.separator + "Tests" + File.separator + "Services" + File.separator, "DepartmentServiceTest.php"));
+//        supportingFiles.add(new SupportingFile("Tests/Services/Validator/DepartmentValidatorTest.php",
+//                outputFolder + File.separator + "Tests" + File.separator + "Services" + File.separator + "Validator" + File.separator, "DepartmentValidatorTest.php"));
+        supportingFiles.add(new SupportingFile("Utils/DepartmentTreeUtils.php",
+                outputFolder + File.separator + "Utils" + File.separator, "DepartmentTreeUtils.php"));
+
     }
 
     @Override

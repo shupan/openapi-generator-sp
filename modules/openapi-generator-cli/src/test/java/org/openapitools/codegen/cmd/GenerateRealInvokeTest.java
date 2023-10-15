@@ -66,24 +66,29 @@ public class GenerateRealInvokeTest {
 //        configurator = mock(CodegenConfigurator.class, mockSettings);
     }
 
-//    @Test
-//    public void testAiboxCmd() {
-//        String value = "io.foo.bar.api";
-//        //setupAndRunGenericTest("--api-package", value);
-//        setupAndRunTest("-i",
-//                "http://127.0.0.1:4523/export/openapi?projectId=3365095&specialPurpose=openapi-generator&apiDetailId=114295607",
-//                "-g", "php-aibox", "-o",
-//                "/Users/macx/Documents/Apifox/CodeGenerator", false, null,
-//                "--api-package", value);
-//        //verify(configurator).setApiPackage(value);
-//    }
+    /**
+     * 对于部门模板的结构填充
+     */
+    @Test
+    public void testThinkPhpDepartment() {
+        String value = "io.foo.bar.api";
+        //setupAndRunGenericTest("--api-package", value);
+        setupAndRunTest("-i",
+                //"http://127.0.0.1:4523/export/openapi?projectId=3365095&specialPurpose=openapi-generator&apiDetailId=114295607",
+                "http://127.0.0.1:4523/export/openapi?projectId=3384223&specialPurpose=openapi-generator&apiDetailId=114973317",
+                "-g", "php-thinkphp", "-o",
+                "/Users/macx/Documents/03project/chinami/gckit/Modules/AiboxUser", false, null,
+                "--api-package", value);
+        //verify(configurator).setApiPackage(value);
+    }
 
     @Test
     public void testThinkPhpOutput() {
         String value = "io.foo.bar.api";
         //setupAndRunGenericTest("--api-package", value);
         setupAndRunTest("-i",
-                "http://127.0.0.1:4523/export/openapi?projectId=3365095&specialPurpose=openapi-generator&apiDetailId=114295607",
+                //"http://127.0.0.1:4523/export/openapi?projectId=3365095&specialPurpose=openapi-generator&apiDetailId=114295607",
+                "http://127.0.0.1:4523/export/openapi?projectId=3384223&specialPurpose=openapi-generator&apiDetailId=114973317",
                 "-g", "php-thinkphp", "-o",
                 "/Users/macx/Documents/03project/chinami/gckit/Modules/AiboxUser", false, null,
                 "--api-package", value);
