@@ -37,6 +37,9 @@ import static org.openapitools.codegen.utils.StringUtils.camelize;
 public class PhpThinkphpServerCodegen extends AbstractPhpCodegen {
     protected String apiVersion = "1.0.0";
 
+    protected String srcBasePath = "";
+
+
     /**
      * Configures the type of generator.
      *
@@ -66,6 +69,8 @@ public class PhpThinkphpServerCodegen extends AbstractPhpCodegen {
     public String getHelp() {
         return "Generates a PHP laravel server library.";
     }
+
+
 
     /**
      * Class constructor
@@ -100,12 +105,13 @@ public class PhpThinkphpServerCodegen extends AbstractPhpCodegen {
         /*
          * Api Package.  Optional, if needed, this can be used in templates
          */
-        apiPackage = "app.Http.Controllers";
+        //apiPackage = "app.Http.Controllers";
+        apiPackage = "Http.Controllers";
 
         /*
          * Model Package.  Optional, if needed, this can be used in templates
          */
-        modelPackage = "app\\Http\\DTO";
+        modelPackage = "Domain\\DTO";
 
         // template files want to be ignored
         apiTestTemplateFiles.clear();
@@ -127,6 +133,7 @@ public class PhpThinkphpServerCodegen extends AbstractPhpCodegen {
          * 把需要支持的文件添加到容器里面下
          * */
         appendSupportingFiles();
+        setDefaultValue();
 //        supportingFiles.add(new SupportingFile("composer.mustache", outputFolder, "composer.json"));
 //        supportingFiles.add(new SupportingFile("README.md", outputFolder, "README.md"));
 //        supportingFiles.add(new SupportingFile("artisan", outputFolder, "artisan"));
@@ -232,6 +239,16 @@ public class PhpThinkphpServerCodegen extends AbstractPhpCodegen {
 //        supportingFiles.add(new SupportingFile("tests/Unit/ExampleTest.php", outputFolder + File.separator + "tests" + File.separator + "Unit", "ExampleTest.php"));
 //        supportingFiles.add(new SupportingFile("tests/CreatesApplication.php", outputFolder + File.separator + "tests", "CreatesApplication.php"));
 //        supportingFiles.add(new SupportingFile("tests/TestCase.php", outputFolder + File.separator + "tests", "TestCase.php"));
+    }
+
+    public void setDefaultValue(){
+        // 直接生成命令的跟目录跟目录就可以
+        this.setSrcBasePath("");
+
+        // app生成的目录改成http的目录下
+        //this.setApiPackage("Http");
+
+        // model的路径修改成Domain下的DTO目录下
     }
 
     /**
@@ -404,8 +421,12 @@ public class PhpThinkphpServerCodegen extends AbstractPhpCodegen {
         return camelize(name) + "Controller";
     }
 
+    /**
+     * 设置控制器的目录文件
+     * @return
+     */
     protected String controllerFileFolder() {
-        return (outputFolder + File.separator + srcBasePath + File.separator + "app" + File.separator + "Http" + File.separator + "Controllers");
+        return (outputFolder + File.separator + srcBasePath  + File.separator + "Http" + File.separator + "Controllers");
     }
 
     @Override
@@ -418,6 +439,11 @@ public class PhpThinkphpServerCodegen extends AbstractPhpCodegen {
         return apiFileFolder() + '/' + toApiFilename(tag) + suffix;
     }
 
+    /**
+     * 对于类名增加Controller后缀
+     * @param name
+     * @return
+     */
     protected String toControllerName(String name) {
         if (name.isEmpty()) {
             return "DefaultController";
